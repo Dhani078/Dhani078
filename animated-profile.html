@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAN.DEV • Muhammad Rizki Ramadhani</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    :root {
+      --bg: #0a0e13;
+      --bg-elevated: #0f1419;
+      --border: rgba(88, 166, 255, 0.15);
+      --text: #c9d1d9;
+      --text-muted: #8b949e;
+      --accent-blue: #58a6ff;
+      --accent-orange: #ffa657;
+      --accent-green: #3fb950;
+    }
+    
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Mono', monospace;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(88, 166, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(255, 166, 87, 0.1) 0%, transparent 50%);
+      animation: bgShift 20s ease-in-out infinite;
+    }
+    
+    @keyframes bgShift {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.1) rotate(5deg); }
+    }
+    
+    .grid-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.3;
+      animation: gridMove 30s linear infinite;
+    }
+    
+    @keyframes gridMove {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(60px); }
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      animation: fadeInUp 1.2s ease-out;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .hero-title {
+      font-size: clamp(48px, 8vw, 120px);
+      font-weight: 900;
+      letter-spacing: -4px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-orange));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+      animation: titleGlow 3s ease-in-out infinite;
+    }
+    
+    @keyframes titleGlow {
+      0%, 100% { filter: drop-shadow(0 0 20px rgba(88, 166, 255, 0.5)); }
+      50% { filter: drop-shadow(0 0 40px rgba(88, 166, 255, 0.8)); }
+    }
+    
+    .hero-subtitle {
+      font-size: clamp(18px, 2vw, 28px);
+      color: var(--text);
+      font-weight: 400;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: fadeIn 1s ease-out 0.3s forwards;
+    }
+    
+    .hero-meta {
+      font-size: clamp(14px, 1.5vw, 18px);
+      color: var(--text-muted);
+      margin-bottom: 50px;
+      opacity: 0;
+      animation: fadeIn 1s ease-out 0.6s forwards;
+    }
+    
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    
+    .status-bar {
+      display: inline-flex;
+      gap: 30px;
+      padding: 20px 40px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      animation: fadeInScale 1s ease-out 0.9s forwards;
+    }
+    
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    .status-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
+    
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(63, 185, 80, 0.7);
+      }
+      50% { 
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(63, 185, 80, 0);
+      }
+    }
+    
+    /* Floating orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.6;
+      animation: float 20s ease-in-out infinite;
+    }
+    
+    .orb-1 {
+      width: 400px;
+      height: 400px;
+      background: var(--accent-blue);
+      top: 10%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+    
+    .orb-2 {
+      width: 300px;
+      height: 300px;
+      background: var(--accent-orange);
+      bottom: 20%;
+      right: 15%;
+      animation-delay: 5s;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -30px) scale(1.1); }
+      66% { transform: translate(-20px, 20px) scale(0.9); }
+    }
+    
+    /* Projects Section */
+    .projects {
+      padding: 100px 0;
+      position: relative;
+    }
+    
+    .section-title {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 800;
+      margin-bottom: 60px;
+      text-align: center;
+      color: var(--text);
+    }
+    
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .project-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-orange));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent-blue);
+      box-shadow: 0 20px 60px rgba(88, 166, 255, 0.2);
+    }
+    
+    .project-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .project-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .project-icon {
+      font-size: 32px;
+      filter: drop-shadow(0 2px 8px rgba(88, 166, 255, 0.4));
+    }
+    
+    .project-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    
+    .project-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    
+    .project-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+    
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+    
+    .tech-tag {
+      padding: 6px 14px;
+      background: rgba(88, 166, 255, 0.1);
+      border: 1px solid rgba(88, 166, 255, 0.3);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent-blue);
+      transition: all 0.3s ease;
+    }
+    
+    .tech-tag:hover {
+      background: rgba(88, 166, 255, 0.2);
+      transform: scale(1.05);
+    }
+    
+    .project-links {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .btn {
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: var(--accent-blue);
+      color: #000;
+      border: none;
+    }
+    
+    .btn-primary:hover {
+      background: var(--accent-orange);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 166, 87, 0.4);
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    
+    .btn-secondary:hover {
+      border-color: var(--accent-blue);
+      background: rgba(88, 166, 255, 0.1);
+    }
+    
+    /* Contact */
+    .contact {
+      padding: 100px 0;
+      text-align: center;
+    }
+    
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    
+    .contact-card {
+      padding: 30px 40px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: var(--text);
+    }
+    
+    .contact-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-blue);
+      box-shadow: 0 15px 40px rgba(88, 166, 255, 0.2);
+    }
+    
+    .contact-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    
+    .contact-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+    
+    .contact-value {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .status-bar {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="grid-overlay"></div>
+    
+    <div class="hero-content">
+      <h1 class="hero-title">DAN.DEV</h1>
+      <p class="hero-subtitle">Muhammad Rizki Ramadhani</p>
+      <p class="hero-meta">Full-stack Software Engineer • Banjarmasin, Indonesia</p>
+      
+      <div class="status-bar">
+        <div class="status-item">
+          <div class="status-dot"></div>
+          <span>Available for Internship</span>
+        </div>
+        <div class="status-item">
+          <div class="status-dot"></div>
+          <span>5 Apps in Production</span>
+        </div>
+        <div class="status-item">
+          <div class="status-dot"></div>
+          <span>TI Semester 7</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects -->
+  <section class="projects">
+    <div class="container">
+      <h2 class="section-title">Production Portfolio</h2>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🏢</span>
+            <div>
+              <h3 class="project-title">EquipRent MS</h3>
+              <p class="project-subtitle">PT. Surya Bangun Sarana</p>
+            </div>
+          </div>
+          
+          <p class="project-desc">
+            Heavy equipment rental management with GPS tracking, multi-role authentication, and real-time inventory. Deployed on Cloudflare edge network.
+          </p>
+          
+          <div class="tech-stack">
+            <span class="tech-tag">React 18</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">CF Workers</span>
+            <span class="tech-tag">TiDB</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://equiprent-pt-surya-bangun-sarana.dhanisepeda.workers.dev" class="btn btn-primary" target="_blank">Live Demo →</a>
+            <a href="https://github.com/Dhani078/equiprent-pt-surya-bangun-sarana" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🧺</span>
+            <div>
+              <h3 class="project-title">Embun Laundry</h3>
+              <p class="project-subtitle">Modern Laundry Management</p>
+            </div>
+          </div>
+          
+          <p class="project-desc">
+            Real-time order tracking, customer database, payment processing, and analytics dashboard. Serverless architecture for zero-maintenance scaling.
+          </p>
+          
+          <div class="tech-stack">
+            <span class="tech-tag">CF Workers</span>
+            <span class="tech-tag">TiDB</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://embun-laundry.dhanisepeda.workers.dev" class="btn btn-primary" target="_blank">Live Demo →</a>
+            <a href="https://github.com/Dhani078/dhani-laundry" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">💰</span>
+            <div>
+              <h3 class="project-title">KasDesk</h3>
+              <p class="project-subtitle">Personal Finance Tracker</p>
+            </div>
+          </div>
+          
+          <p class="project-desc">
+            Offline-first PWA with multi-wallet tracking, OCR receipt scanning (Gemini Vision), biometric auth, and real-time sync with TiDB Cloud.
+          </p>
+          
+          <div class="tech-stack">
+            <span class="tech-tag">Next.js 16</span>
+            <span class="tech-tag">React 19</span>
+            <span class="tech-tag">TiDB</span>
+            <span class="tech-tag">PWA</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://kas-desk.vercel.app" class="btn btn-primary" target="_blank">Live Demo →</a>
+            <a href="https://github.com/Dhani078/KasDesk" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🎨</span>
+            <div>
+              <h3 class="project-title">DAN.DEV Portfolio</h3>
+              <p class="project-subtitle">3D Interactive Experience</p>
+            </div>
+          </div>
+          
+          <p class="project-desc">
+            Physics-based 3D portfolio with R3F + Rapier. Interactive ID card lanyard, UV-mapped textures, smooth animations.
+          </p>
+          
+          <div class="tech-stack">
+            <span class="tech-tag">Next.js 16</span>
+            <span class="tech-tag">Three.js</span>
+            <span class="tech-tag">Rapier</span>
+            <span class="tech-tag">Supabase</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://portofoliodan-lovat.vercel.app" class="btn btn-primary" target="_blank">Live Demo →</a>
+            <a href="https://github.com/Dhani078/Portofolio" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      
+      <div class="contact-links">
+        <a href="mailto:dhanisepeda@gmail.com" class="contact-card">
+          <div class="contact-icon">📧</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">dhanisepeda@gmail.com</div>
+        </a>
+        
+        <a href="https://wa.me/6282148564979" class="contact-card" target="_blank">
+          <div class="contact-icon">💬</div>
+          <div class="contact-label">WhatsApp</div>
+          <div class="contact-value">+62 821-4856-4979</div>
+        </a>
+        
+        <a href="https://github.com/Dhani078" class="contact-card" target="_blank">
+          <div class="contact-icon">💻</div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">@Dhani078</div>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
