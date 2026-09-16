@@ -35,7 +35,20 @@ const developer = {
 
 ## 🛠️ Tech Arsenal
 
-![Skills Ultimate](https://raw.githubusercontent.com/Dhani078/Dhani078/main/assets/skills-ultimate.svg)
+<div align="center">
+
+### Frontend Engineering
+**Next.js 16** (App Router, RSC) • **React 19** (Server Actions) • **TypeScript** (Strict)  
+**Three.js / R3F** • **Rapier Physics** • **Tailwind CSS v4** • **Framer Motion**
+
+### Backend & Cloud
+**Cloudflare Workers** • **Node.js** • **Edge Runtime**  
+**TiDB Cloud Serverless** • **Supabase** (PostgreSQL + RLS) • **Drizzle ORM**
+
+### DevOps & Tools
+**Git & GitHub** • **Docker** • **Linux** • **Vercel** • **CI/CD Pipelines** • **PWA**
+
+</div>
 
 ---
 
@@ -105,13 +118,15 @@ Video transcription and auto-captioning pipeline with speech-to-text, frame extr
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Activity
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Dhani078&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&icon_color=00d4ff&count_private=true&include_all_commits=true)
+**42 Total Contributions** • **5 Production Apps** • **4 Tech Stacks Mastered**
 
-![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Dhani078&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&langs_count=8)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Dhani078&show_icons=true&theme=tokyonight&hide_border=true&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&bg_color=0d1117)](https://github.com/Dhani078)
+
+**Primary Languages:** TypeScript • JavaScript • PHP • Python
 
 </div>
 
