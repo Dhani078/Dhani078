@@ -1,0 +1,217 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skillBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e13;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1f2e;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="barNeon1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="barNeon2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0080;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ff0055;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="barNeon3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00cc66;stop-opacity:1"/>
+    </linearGradient>
+    
+    <filter id="neonBar">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 0 L 40 0 M 0 0 L 0 40" stroke="rgba(0,212,255,0.1)" stroke-width="1" fill="none"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1200" height="400" fill="url(#skillBg)"/>
+  <rect width="1200" height="400" fill="url(#techGrid)" opacity="0.3"/>
+  
+  <!-- Title hologram -->
+  <text x="600" y="60" font-family="'SF Mono', monospace" font-size="42" font-weight="900" text-anchor="middle" fill="#00d4ff" filter="url(#neonBar)">
+    TECH STACK
+  </text>
+  
+  <!-- Frontend -->
+  <g transform="translate(80, 120)">
+    <text x="0" y="0" font-family="'SF Mono', monospace" font-size="16" font-weight="800" fill="#00d4ff" letter-spacing="3">FRONTEND</text>
+    
+    <g transform="translate(0, 30)">
+      <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon1)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="290" dur="2s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#00d4ff" opacity="0.4">
+        <animate attributeName="width" from="0" to="290" dur="2s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Next.js 16</text>
+      <text x="310" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon1)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="295" dur="2s" begin="0.2s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#00d4ff" opacity="0.4">
+        <animate attributeName="width" from="0" to="295" dur="2s" begin="0.2s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">React 19</text>
+      <text x="310" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
+    </g>
+    
+    <g transform="translate(0, 100)">
+      <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon1)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="288" dur="2s" begin="0.4s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#00d4ff" opacity="0.4">
+        <animate attributeName="width" from="0" to="288" dur="2s" begin="0.4s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">TypeScript</text>
+      <text x="310" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
+    </g>
+    
+    <g transform="translate(0, 135)">
+      <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon1)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="260" dur="2s" begin="0.6s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#00d4ff" opacity="0.4">
+        <animate attributeName="width" from="0" to="260" dur="2s" begin="0.6s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Three.js / R3F</text>
+      <text x="310" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#ff0080" font-weight="700">ADVANCED</text>
+    </g>
+  </g>
+  
+  <!-- Backend -->
+  <g transform="translate(480, 120)">
+    <text x="0" y="0" font-family="'SF Mono', monospace" font-size="16" font-weight="800" fill="#ff0080" letter-spacing="3">BACKEND & CLOUD</text>
+    
+    <g transform="translate(0, 30)">
+      <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon2)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="292" dur="2s" begin="0.3s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#ff0080" opacity="0.4">
+        <animate attributeName="width" from="0" to="292" dur="2s" begin="0.3s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">CF Workers</text>
+      <text x="310" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon2)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="290" dur="2s" begin="0.5s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#ff0080" opacity="0.4">
+        <animate attributeName="width" from="0" to="290" dur="2s" begin="0.5s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">TiDB Cloud</text>
+      <text x="310" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
+    </g>
+    
+    <g transform="translate(0, 100)">
+      <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon2)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="288" dur="2s" begin="0.7s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#ff0080" opacity="0.4">
+        <animate attributeName="width" from="0" to="288" dur="2s" begin="0.7s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">PostgreSQL</text>
+      <text x="310" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
+    </g>
+    
+    <g transform="translate(0, 135)">
+      <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon2)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="270" dur="2s" begin="0.9s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#ff0080" opacity="0.4">
+        <animate attributeName="width" from="0" to="270" dur="2s" begin="0.9s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Node.js</text>
+      <text x="310" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#ff0080" font-weight="700">ADVANCED</text>
+    </g>
+  </g>
+  
+  <!-- DevOps -->
+  <g transform="translate(880, 120)">
+    <text x="0" y="0" font-family="'SF Mono', monospace" font-size="16" font-weight="800" fill="#00ff88" letter-spacing="3">DEVOPS</text>
+    
+    <g transform="translate(0, 30)">
+      <rect width="240" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon3)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="235" dur="2s" begin="0.4s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#00ff88" opacity="0.4">
+        <animate attributeName="width" from="0" to="235" dur="2s" begin="0.4s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Git & GitHub</text>
+      <text x="250" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
+    </g>
+    
+    <g transform="translate(0, 65)">
+      <rect width="240" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon3)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="210" dur="2s" begin="0.6s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#00ff88" opacity="0.4">
+        <animate attributeName="width" from="0" to="210" dur="2s" begin="0.6s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Docker</text>
+      <text x="250" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#ff0080" font-weight="700">ADVANCED</text>
+    </g>
+    
+    <g transform="translate(0, 100)">
+      <rect width="240" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon3)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="218" dur="2s" begin="0.8s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#00ff88" opacity="0.4">
+        <animate attributeName="width" from="0" to="218" dur="2s" begin="0.8s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Linux</text>
+      <text x="250" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#ff0080" font-weight="700">ADVANCED</text>
+    </g>
+    
+    <g transform="translate(0, 135)">
+      <rect width="240" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <rect width="0" height="12" rx="6" fill="url(#barNeon3)" filter="url(#neonBar)">
+        <animate attributeName="width" from="0" to="232" dur="2s" begin="1s" fill="freeze"/>
+      </rect>
+      <rect y="-4" width="0" height="4" rx="2" fill="#00ff88" opacity="0.4">
+        <animate attributeName="width" from="0" to="232" dur="2s" begin="1s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Vercel</text>
+      <text x="250" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
+    </g>
+  </g>
+  
+  <!-- Corner frames -->
+  <path d="M 40,40 L 40,80 M 40,40 L 80,40" stroke="#00d4ff" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 1160,40 L 1160,80 M 1160,40 L 1120,40" stroke="#ff0080" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 40,360 L 40,320 M 40,360 L 80,360" stroke="#00ff88" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 1160,360 L 1160,320 M 1160,360 L 1120,360" stroke="#00d4ff" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </path>
+</svg>

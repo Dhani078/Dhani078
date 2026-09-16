@@ -1,0 +1,169 @@
+<svg width="600" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e13;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#1a1f2e;stop-opacity:0.95"/>
+    </linearGradient>
+    
+    <linearGradient id="cyberAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#0099ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1">
+        <animate attributeName="stop-color" values="#00d4ff;#0047ff;#00d4ff" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <filter id="cyberGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#00d4ff" flood-opacity="0.7"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="hologram">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    
+    <linearGradient id="scanline" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(0,212,255,0);stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:rgba(0,212,255,0.3);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgba(0,212,255,0);stop-opacity:0"/>
+    </linearGradient>
+    
+    <pattern id="circuitPattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 0 25 L 15 25 L 15 10 M 15 25 L 15 40 M 35 15 L 50 15 M 25 0 L 25 15 L 35 15" stroke="rgba(0,212,255,0.15)" stroke-width="1" fill="none"/>
+    </pattern>
+  </defs>
+  
+  <!-- Card base with depth -->
+  <g filter="drop-shadow(0 15px 40px rgba(0,0,0,0.7))">
+    <rect x="20" y="20" width="560" height="310" rx="20" fill="#0d1117" opacity="0.3"/>
+    <rect x="15" y="15" width="560" height="310" rx="20" fill="url(#cyberBg)"/>
+  </g>
+  
+  <!-- Circuit pattern overlay -->
+  <rect x="15" y="15" width="560" height="310" rx="20" fill="url(#circuitPattern)" opacity="0.2"/>
+  
+  <!-- Animated top accent bar -->
+  <rect x="15" y="15" width="560" height="8" rx="20" fill="url(#cyberAccent)">
+    <animate attributeName="height" values="8;12;8" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Holographic scan line -->
+  <rect x="15" y="15" width="560" height="20" rx="20" fill="url(#scanline)" opacity="0.4">
+    <animate attributeName="y" values="15;310;15" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Border with pulsing glow -->
+  <rect x="15" y="15" width="560" height="310" rx="20" fill="none" stroke="url(#cyberAccent)" stroke-width="2" filter="url(#cyberGlow)">
+    <animate attributeName="stroke-width" values="2;3;2" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Icon hologram -->
+  <g transform="translate(55, 60)">
+    <circle cx="0" cy="0" r="35" fill="rgba(0,212,255,0.15)" stroke="#00d4ff" stroke-width="2">
+      <animate attributeName="r" values="35;40;35" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.3;0.15" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.3">
+      <animate attributeName="r" values="45;50;45" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="15" font-size="42" text-anchor="middle" filter="url(#cyberGlow)">🏢</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="110" y="60" font-family="'SF Mono', monospace" font-size="36" font-weight="900" fill="#ffffff" letter-spacing="-1">
+    EquipRent MS
+  </text>
+  
+  <!-- Subtitle with glow -->
+  <text x="110" y="90" font-family="'SF Mono', monospace" font-size="16" fill="#00d4ff" font-weight="600" letter-spacing="1">
+    PT. SURYA BANGUN SARANA
+  </text>
+  
+  <!-- Status hologram -->
+  <g transform="translate(500, 60)">
+    <circle cx="0" cy="0" r="6" fill="#00ff88">
+      <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#00ff88" stroke-width="2" opacity="0.5">
+      <animate attributeName="r" values="12;16;12" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="6" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700" letter-spacing="2">LIVE</text>
+  </g>
+  
+  <!-- Description -->
+  <text x="55" y="140" font-family="'SF Mono', monospace" font-size="17" fill="#c9d1d9" line-height="1.6">
+    <tspan x="55" dy="0">Heavy equipment rental management with GPS</tspan>
+    <tspan x="55" dy="28">tracking, multi-role authentication, and real-time</tspan>
+    <tspan x="55" dy="28">inventory. Deployed globally on Cloudflare edge.</tspan>
+  </text>
+  
+  <!-- Tech stack holographic badges -->
+  <g transform="translate(55, 230)">
+    <g>
+      <rect width="100" height="32" rx="8" fill="rgba(32,35,42,0.6)" stroke="#61dafb" stroke-width="2"/>
+      <rect width="100" height="32" rx="8" fill="rgba(97,218,251,0.1)"/>
+      <text x="50" y="21" font-family="'SF Mono', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#61dafb">React 18</text>
+    </g>
+    
+    <g transform="translate(110, 0)">
+      <rect width="110" height="32" rx="8" fill="rgba(32,35,42,0.6)" stroke="#007acc" stroke-width="2"/>
+      <rect width="110" height="32" rx="8" fill="rgba(0,122,204,0.1)"/>
+      <text x="55" y="21" font-family="'SF Mono', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#007acc">TypeScript</text>
+    </g>
+    
+    <g transform="translate(230, 0)">
+      <rect width="120" height="32" rx="8" fill="rgba(32,35,42,0.6)" stroke="#f38020" stroke-width="2"/>
+      <rect width="120" height="32" rx="8" fill="rgba(243,128,32,0.1)"/>
+      <text x="60" y="21" font-family="'SF Mono', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#f38020">CF Workers</text>
+    </g>
+    
+    <g transform="translate(360, 0)">
+      <rect width="70" height="32" rx="8" fill="rgba(32,35,42,0.6)" stroke="#ff3b3b" stroke-width="2"/>
+      <rect width="70" height="32" rx="8" fill="rgba(255,59,59,0.1)"/>
+      <text x="35" y="21" font-family="'SF Mono', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#ff3b3b">TiDB</text>
+    </g>
+  </g>
+  
+  <!-- Holographic buttons -->
+  <g transform="translate(55, 285)">
+    <!-- Live Demo -->
+    <g filter="url(#cyberGlow)">
+      <rect width="140" height="45" rx="10" fill="rgba(0,212,255,0.2)" stroke="#00d4ff" stroke-width="2">
+        <animate attributeName="fill" values="rgba(0,212,255,0.2);rgba(0,212,255,0.4);rgba(0,212,255,0.2)" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <text x="70" y="29" font-family="'SF Mono', monospace" font-size="16" font-weight="800" text-anchor="middle" fill="#00d4ff">LIVE DEMO →</text>
+    </g>
+    
+    <!-- GitHub -->
+    <g transform="translate(155, 0)">
+      <rect width="120" height="45" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+      <text x="60" y="29" font-family="'SF Mono', monospace" font-size="16" font-weight="800" text-anchor="middle" fill="#8b949e">GitHub →</text>
+    </g>
+  </g>
+  
+  <!-- Corner tech details -->
+  <g stroke-width="3" stroke-linecap="round">
+    <path d="M 560 30 L 560 60 M 530 30 L 560 30" stroke="#00d4ff" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Data streams (animated lines) -->
+  <g opacity="0.4">
+    <line x1="15" y1="100" x2="15" y2="100" stroke="#00d4ff" stroke-width="2">
+      <animate attributeName="y2" values="100;325;100" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="575" y1="100" x2="575" y2="100" stroke="#00d4ff" stroke-width="2">
+      <animate attributeName="y2" values="100;325;100" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>

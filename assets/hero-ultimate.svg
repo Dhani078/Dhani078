@@ -1,0 +1,266 @@
+<svg width="1400" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e13;stop-opacity:1">
+        <animate attributeName="stop-color" values="#0a0e13;#1a1f2e;#0a0e13" dur="15s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#1c2128;stop-opacity:1">
+        <animate attributeName="stop-color" values="#1c2128;#2d3748;#1c2128" dur="15s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <linearGradient id="neonBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#0099ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0047ff;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="neonPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0080;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#ff0055;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#cc0066;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00cc66;stop-opacity:1"/>
+    </linearGradient>
+    
+    <filter id="megaGlow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#00d4ff" flood-opacity="0.8"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#ff0080"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <radialGradient id="megaOrb1">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#0099ff;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#0047ff;stop-opacity:0"/>
+    </radialGradient>
+    
+    <radialGradient id="megaOrb2">
+      <stop offset="0%" style="stop-color:#ff0080;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#ff0055;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#cc0066;stop-opacity:0"/>
+    </radialGradient>
+    
+    <radialGradient id="megaOrb3">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#00cc66;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#009944;stop-opacity:0"/>
+    </radialGradient>
+    
+    <pattern id="hexGrid" width="100" height="86.6" patternUnits="userSpaceOnUse" patternTransform="scale(0.8)">
+      <polygon points="50,0 93.3,25 93.3,75 50,100 6.7,75 6.7,25" fill="none" stroke="rgba(0,212,255,0.15)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="700" fill="url(#skyGrad)"/>
+  
+  <!-- Hex grid with parallax -->
+  <rect width="1400" height="700" fill="url(#hexGrid)" opacity="0.4">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; -50,-43.3; 0,0"
+      dur="40s"
+      repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Massive floating orbs with 3D depth -->
+  <ellipse cx="250" cy="180" rx="200" ry="200" fill="url(#megaOrb1)" filter="url(#megaGlow)">
+    <animate attributeName="cx" values="250;350;250" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="180;140;180" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="200;250;200" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="200;250;200" dur="20s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="1150" cy="520" rx="220" ry="220" fill="url(#megaOrb2)" filter="url(#neonGlow)">
+    <animate attributeName="cx" values="1150;1050;1150" dur="22s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="520;560;520" dur="22s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="220;270;220" dur="22s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="220;270;220" dur="22s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="700" cy="600" rx="180" ry="180" fill="url(#megaOrb3)">
+    <animate attributeName="cy" values="600;550;600" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="180;220;180" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="180;220;180" dur="18s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Isometric 3D platform layers -->
+  <g transform="translate(700, 300)" opacity="0.2">
+    <!-- Layer 1 -->
+    <path d="M -300,0 L 0,-150 L 300,0 L 0,150 Z" fill="#00d4ff" opacity="0.3">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-20; 0,0"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </path>
+    <path d="M -300,0 L 0,150 L 0,180 L -300,30 Z" fill="#0099ff" opacity="0.4"/>
+    <path d="M 300,0 L 0,150 L 0,180 L 300,30 Z" fill="#0047ff" opacity="0.5"/>
+    
+    <!-- Layer 2 smaller -->
+    <path d="M -200,-50 L 0,-150 L 200,-50 L 0,50 Z" fill="#ff0080" opacity="0.3">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-15; 0,0"
+        dur="5s"
+        begin="1s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Particle system - много particles -->
+  <g opacity="0.8">
+    <!-- Blue particles -->
+    <circle cx="120" cy="650" r="4" fill="#00d4ff">
+      <animate attributeName="cy" values="650;50;650" dur="25s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="25s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;6;4" dur="25s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="680" r="3" fill="#0099ff">
+      <animate attributeName="cy" values="680;80;680" dur="22s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="22s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="660" r="5" fill="#00d4ff">
+      <animate attributeName="cy" values="660;60;660" dur="28s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="28s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="5;7;5" dur="28s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Pink particles -->
+    <circle cx="880" cy="670" r="4" fill="#ff0080">
+      <animate attributeName="cy" values="670;70;670" dur="24s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="24s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="690" r="3" fill="#ff0055">
+      <animate attributeName="cy" values="690;90;690" dur="26s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="26s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1280" cy="665" r="5" fill="#cc0066">
+      <animate attributeName="cy" values="665;65;665" dur="23s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="23s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Green particles -->
+    <circle cx="200" cy="670" r="3" fill="#00ff88">
+      <animate attributeName="cy" values="670;70;670" dur="27s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="27s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="680" r="4" fill="#00cc66">
+      <animate attributeName="cy" values="680;80;680" dur="21s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="21s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1200" cy="675" r="3" fill="#009944">
+      <animate attributeName="cy" values="675;75;675" dur="29s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="29s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Main title dengan massive glow -->
+  <g transform="translate(700, 220)">
+    <text x="0" y="0" font-family="'SF Mono', 'Fira Code', monospace" font-size="140" font-weight="900" text-anchor="middle" fill="url(#neonBlue)" filter="url(#megaGlow)">
+      DAN.DEV
+      <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+    </text>
+    
+    <!-- Subtitle glowing -->
+    <g opacity="0">
+      <text x="0" y="70" font-family="'SF Mono', monospace" font-size="32" font-weight="400" text-anchor="middle" fill="#ffffff" letter-spacing="4">
+        MUHAMMAD RIZKI RAMADHANI
+      </text>
+      <animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.8s" fill="freeze"/>
+    </g>
+    
+    <g opacity="0">
+      <text x="0" y="110" font-family="'SF Mono', monospace" font-size="22" text-anchor="middle" fill="url(#neonPink)">
+        Full-stack Software Engineer
+      </text>
+      <animate attributeName="opacity" values="0;1" begin="0.8s" dur="0.8s" fill="freeze"/>
+    </g>
+  </g>
+  
+  <!-- 3D holographic stats panel -->
+  <g transform="translate(200, 500)">
+    <!-- Panel base -->
+    <path d="M 0,0 L 1000,0 L 980,100 L 20,100 Z" fill="rgba(0,212,255,0.05)" stroke="url(#neonBlue)" stroke-width="2">
+      <animate attributeName="opacity" values="0.05;0.15;0.05" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Stats with neon glow -->
+    <g transform="translate(100, 50)">
+      <circle cx="0" cy="0" r="8" fill="#00ff88" filter="url(#megaGlow)">
+        <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="20" y="6" font-family="'SF Mono', monospace" font-size="18" fill="#00ff88" font-weight="700" letter-spacing="2">5 APPS IN PRODUCTION</text>
+    </g>
+    
+    <g transform="translate(450, 50)">
+      <circle cx="0" cy="0" r="8" fill="#ff0080" filter="url(#neonGlow)">
+        <animate attributeName="r" values="8;12;8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="20" y="6" font-family="'SF Mono', monospace" font-size="18" fill="#ff0080" font-weight="700" letter-spacing="2">OPEN TO INTERNSHIP</text>
+    </g>
+    
+    <g transform="translate(850, 50)">
+      <circle cx="0" cy="0" r="8" fill="#00d4ff">
+        <animate attributeName="r" values="8;12;8" dur="2s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <text x="20" y="6" font-family="'SF Mono', monospace" font-size="18" fill="#00d4ff" font-weight="700" letter-spacing="2">TI SEM 7</text>
+    </g>
+  </g>
+  
+  <!-- Animated corner frames -->
+  <g stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <!-- Top left -->
+    <path d="M 40,40 L 40,100 M 40,40 L 100,40" stroke="url(#neonBlue)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Top right -->
+    <path d="M 1360,40 L 1360,100 M 1360,40 L 1300,40" stroke="url(#neonPink)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Bottom left -->
+    <path d="M 40,660 L 40,600 M 40,660 L 100,660" stroke="url(#neonGreen)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Bottom right -->
+    <path d="M 1360,660 L 1360,600 M 1360,660 L 1300,660" stroke="url(#neonBlue)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Scanning line effect -->
+  <rect x="0" y="0" width="1400" height="4" fill="url(#neonBlue)" opacity="0.6">
+    <animate attributeName="y" values="-4;700" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
