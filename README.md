@@ -281,23 +281,20 @@ const dhani = {
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Dhani078&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&count_private=true&include_all_commits=true" alt="GitHub Stats" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Dhani078&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" width="49%" />
+![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Dhani078&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&count_private=true&include_all_commits=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Dhani078&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff)
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Dhani078&custom_title=Contribution%20Graph&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&hide_border=true" alt="Contribution Graph" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dhani078&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=10&exclude_repo=repo1,repo2" alt="Top Languages" width="49%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dhani078&theme=github_dark&utcOffset=8" alt="Productive Time" width="49%" />
+![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Dhani078&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8)
 
 </div>
 
 ---
 
-## 🏆 Achievements
+## 🏆 GitHub Trophies
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=Dhani078&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10&rank=-C,-?)](https://github.com/ryo-ma/github-profile-trophy)
+![trophy](https://github-profile-trophy.vercel.app/?username=Dhani078&theme=darkhub&no-frame=true&no-bg=false&column=7&margin-w=10&margin-h=10)
 
 </div>
 
