@@ -1,171 +1,107 @@
 <div align="center">
 
-```ascii
-██████╗  █████╗ ███╗   ██╗   ██████╗ ███████╗██╗   ██╗
-██╔══██╗██╔══██╗████╗  ██║   ██╔══██╗██╔════╝██║   ██║
-██║  ██║███████║██╔██╗ ██║   ██║  ██║█████╗  ██║   ██║
-██║  ██║██╔══██║██║╚██╗██║   ██║  ██║██╔══╝  ╚██╗ ██╔╝
-██████╔╝██║  ██║██║ ╚████║██╗██████╔╝███████╗ ╚████╔╝ 
-╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═════╝ ╚══════╝  ╚═══╝  
-```
+![Hero 3D Animated](https://raw.githubusercontent.com/Dhani078/Dhani078/main/assets/hero-3d-animated.svg)
 
-**Muhammad Rizki Ramadhani**  
-Full-stack Software Engineer
-
-`Banjarmasin, Indonesia` • `TI Semester 7 UNISKA` • `Open to Internship`
-
-**[→ View Animated Profile](https://dhani078.github.io/Dhani078/animated-profile.html)** ✨
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-portofoliodan--lovat.vercel.app-FF3B3B?style=for-the-badge)](https://portofoliodan-lovat.vercel.app)
+[![Email](https://img.shields.io/badge/📧_Email-dhanisepeda@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhanisepeda@gmail.com)
+[![WhatsApp](https://img.shields.io/badge/💬_WhatsApp-+62_821--4856--4979-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6282148564979)
 
 </div>
 
-```diff
-+ 5 production applications deployed
-+ 4 tech stacks mastered (Next.js, React, CF Workers, TiDB)
-+ 1 focus: building software that ships
+---
+
+## 👨‍💻 About
+
+```typescript
+const developer = {
+  name: "Muhammad Rizki Ramadhani",
+  role: "Full-stack Software Engineer",
+  location: "Banjarmasin, Indonesia",
+  education: "Computer Science • Semester 7 • UNISKA",
+  
+  focus: [
+    "Scalable edge applications (Cloudflare Workers)",
+    "3D interactive experiences (Three.js + R3F)",
+    "Serverless architectures (TiDB Cloud)",
+    "Offline-first PWAs"
+  ],
+  
+  status: "Seeking Software Engineering Internship"
+};
 ```
+
+**Experience:** 5 production apps deployed • 4 tech stacks mastered  
+**Philosophy:** Clean code, real impact, production-ready
 
 ---
 
-## ⚡ Current Stack
+## 🛠️ Tech Stack
 
-<table>
-<tr>
-<td>
+![Skills 3D Animated](https://raw.githubusercontent.com/Dhani078/Dhani078/main/assets/skills-3d-animated.svg)
 
-**Frontend**
-```
-Next.js 16
-├─ App Router + RSC
-├─ React 19 Server Actions
-└─ TypeScript Strict Mode
+<div align="center">
 
-React Three Fiber
-├─ WebGL + Rapier Physics
-└─ Interactive 3D experiences
+**Frontend:** Next.js 16 (App Router, RSC) • React 19 • TypeScript • Three.js/R3F • Rapier Physics • Tailwind v4  
+**Backend:** Cloudflare Workers • Node.js • Edge Runtime • RESTful APIs • WebSocket  
+**Database:** TiDB Cloud Serverless • Supabase (PostgreSQL + RLS) • Drizzle ORM  
+**DevOps:** Git/GitHub • Docker • Linux • Vercel • CI/CD Pipelines • PWA
 
-Styling
-├─ Tailwind CSS v4
-└─ Framer Motion
-```
-
-</td>
-<td>
-
-**Backend**
-```
-Cloudflare Workers
-├─ Edge compute
-├─ Zero cold starts
-└─ Global deployment
-
-TiDB Cloud
-├─ Serverless MySQL
-├─ Auto-scaling
-└─ <1ms latency
-
-Supabase
-├─ PostgreSQL + RLS
-└─ Real-time subscriptions
-```
-
-</td>
-<td>
-
-**Tools**
-```
-Development
-├─ Git + GitHub
-├─ Docker
-└─ Linux
-
-Deployment
-├─ Vercel Edge
-├─ CF Pages
-└─ CI/CD pipelines
-
-Integration
-├─ REST APIs
-├─ Webhooks
-└─ AI (Gemini)
-```
-
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
 ## 🚀 Production Portfolio
 
-### **[EquipRent MS](https://equiprent-pt-surya-bangun-sarana.dhanisepeda.workers.dev)** × PT. Surya Bangun Sarana
+<div align="center">
 
-> Heavy equipment rental management system with GPS tracking and multi-role authentication
+### EquipRent Management System
 
-**Architecture:** React 18 • TypeScript • Cloudflare Workers • TiDB  
-**Scale:** Admin/Staff/User roles • Real-time inventory • Transaction processing  
-**Status:** 🟢 Live in production
+[![EquipRent Card](https://raw.githubusercontent.com/Dhani078/Dhani078/main/assets/card-equiprent-3d.svg)](https://equiprent-pt-surya-bangun-sarana.dhanisepeda.workers.dev)
 
-[`View Source →`](https://github.com/Dhani078/equiprent-pt-surya-bangun-sarana)
+**[→ Live Demo](https://equiprent-pt-surya-bangun-sarana.dhanisepeda.workers.dev)** • **[→ GitHub](https://github.com/Dhani078/equiprent-pt-surya-bangun-sarana)**
 
----
-
-### **[Embun Laundry](https://embun-laundry.dhanisepeda.workers.dev)** × Laundry Operations
-
-> Modern laundry management with real-time order tracking and analytics
-
-**Architecture:** Cloudflare Workers • TiDB • Vanilla JS  
-**Scale:** Customer database • Payment processing • Status tracking  
-**Status:** 🟢 Live in production
-
-[`View Source →`](https://github.com/Dhani078/dhani-laundry)
+Heavy equipment rental system for PT. Surya Bangun Sarana with GPS tracking, role-based authentication (Admin/Staff/User), real-time inventory management, and transaction processing. Deployed on Cloudflare edge network for global performance.
 
 ---
 
-### **[KasDesk](https://kas-desk.vercel.app)** × Personal Finance
+### Embun Laundry
 
-> Offline-first PWA for personal wealth tracking with OCR receipt scanning
+[![Embun Card](https://raw.githubusercontent.com/Dhani078/Dhani078/main/assets/card-embun-3d.svg)](https://embun-laundry.dhanisepeda.workers.dev)
 
-**Architecture:** Next.js 16 • React 19 • TiDB • Drizzle ORM  
-**Features:** Multi-wallet tracking • Gemini Vision OCR • Biometric auth • Service Worker sync  
-**Status:** 🟢 Live in production
+**[→ Live Demo](https://embun-laundry.dhanisepeda.workers.dev)** • **[→ GitHub](https://github.com/Dhani078/dhani-laundry)**
 
-[`View Source →`](https://github.com/Dhani078/KasDesk)
+Modern laundry management system with real-time order tracking, customer database, payment processing, and analytics dashboard. Serverless architecture for zero-maintenance scaling.
 
 ---
 
-### **[DAN.DEV](https://portofoliodan-lovat.vercel.app)** × Interactive Portfolio
+### KasDesk PWA
 
-> 3D portfolio with physics-based ID card lanyard using React Three Fiber
+[![KasDesk Card](https://raw.githubusercontent.com/Dhani078/Dhani078/main/assets/card-kasdesk-3d.svg)](https://kas-desk.vercel.app)
 
-**Architecture:** Next.js 16 • React 19 • Three.js • Rapier Physics • Supabase  
-**Features:** Interactive 3D • UV-mapped textures • Smooth animations • Responsive  
-**Status:** 🟢 Live on Vercel
+**[→ Live Demo](https://kas-desk.vercel.app)** • **[→ GitHub](https://github.com/Dhani078/KasDesk)**
 
-[`View Source →`](https://github.com/Dhani078/Portofolio)
+Personal finance & wealth tracker with offline-first PWA architecture, multi-wallet transaction tracking, OCR receipt scanning (Gemini Vision API), biometric authentication, and real-time sync with TiDB Cloud.
 
 ---
 
-### **[AutoClip](https://github.com/Dhani078/AutoClip)** × Video Pipeline
+### More Projects
 
-> Automated video transcription and captioning pipeline
+**[DAN.DEV Portfolio](https://portofoliodan-lovat.vercel.app)** — 3D interactive portfolio with R3F + Rapier physics  
+**[AutoClip](https://github.com/Dhani078/AutoClip)** — Video transcription pipeline with FastAPI + Faster-Whisper
 
-**Architecture:** FastAPI • OpenCV • Faster-Whisper  
-**Features:** Speech-to-text • Frame extraction • Auto-generated captions  
-**Status:** 🟡 Development
+**[→ All Repositories](https://github.com/Dhani078?tab=repositories)**
 
-[`View Source →`](https://github.com/Dhani078/AutoClip)
+</div>
 
 ---
 
-## 📊 Activity
+## 📊 GitHub Stats
 
 <div align="center">
 
 ![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Dhani078&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&count_private=true&include_all_commits=true)
 
 ![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Dhani078&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8)
-
-[**→ All Repositories**](https://github.com/Dhani078?tab=repositories)
 
 </div>
 
@@ -194,11 +130,11 @@ focus: real coding projects with portfolio output
 ```
 
 **Target companies:**
-- `OJT Informatika` — Linux, Docker, Open Journal Systems
-- `BanjarKode` — Software development
-- `iTech Space` — Tech innovation
-- `Cipta Dewantara` — Enterprise systems
-- Government agencies — Bappeda Litbang, Disbudporapar, DPMPTSP, Disdukcapil
+- **OJT Informatika** — Linux, Docker, Open Journal Systems
+- **BanjarKode** — Software development
+- **iTech Space** — Tech innovation
+- **Cipta Dewantara** — Enterprise systems
+- **Government** — Bappeda Litbang, Disbudporapar, DPMPTSP, Disdukcapil
 
 ---
 
@@ -215,6 +151,6 @@ focus: real coding projects with portfolio output
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Dhani078&label=views&color=58a6ff&style=flat-square)
 
-**Available for internship opportunities**
+**Muhammad Rizki Ramadhani** • TI Semester 7 UNISKA • Available for internship opportunities
 
 </div>

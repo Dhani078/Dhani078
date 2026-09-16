@@ -1,0 +1,97 @@
+<svg width="550" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3fb950;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#56d364;stop-opacity:1"/>
+    </linearGradient>
+    
+    <filter id="shadow3">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.4" flood-color="#000"/>
+    </filter>
+    
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#3fb950" flood-opacity="0.6"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <g filter="url(#shadow3)">
+    <rect x="15" y="15" width="520" height="290" rx="16" fill="#0d1117" opacity="0.5"/>
+    <rect x="10" y="10" width="520" height="290" rx="16" fill="url(#cardBg3)"/>
+  </g>
+  
+  <rect x="10" y="10" width="520" height="6" rx="16" fill="url(#accent3)">
+    <animate attributeName="height" values="6;8;6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="10" y="10" width="520" height="290" rx="16" fill="none" stroke="rgba(63,185,80,0.3)" stroke-width="1.5"/>
+  
+  <g transform="translate(45, 50)">
+    <circle cx="0" cy="0" r="28" fill="rgba(46,160,67,0.2)">
+      <animate attributeName="r" values="28;32;28" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="10" font-size="32" text-anchor="middle" filter="url(#glow3)">💰</text>
+  </g>
+  
+  <text x="90" y="50" font-family="'SF Mono', monospace" font-size="28" font-weight="800" fill="#c9d1d9">
+    KasDesk
+  </text>
+  
+  <text x="90" y="75" font-family="'SF Mono', monospace" font-size="14" fill="#8b949e">
+    Personal Finance Tracker PWA
+  </text>
+  
+  <g transform="translate(450, 50)">
+    <circle cx="0" cy="0" r="5" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="12" y="5" font-family="monospace" font-size="11" fill="#3fb950" font-weight="600">LIVE</text>
+  </g>
+  
+  <text x="45" y="115" font-family="'SF Mono', monospace" font-size="15" fill="#c9d1d9">
+    <tspan x="45" dy="0">Offline-first PWA with multi-wallet tracking, OCR</tspan>
+    <tspan x="45" dy="22">receipt scanning (Gemini Vision), biometric auth,</tspan>
+    <tspan x="45" dy="22">and real-time sync with TiDB Cloud.</tspan>
+  </text>
+  
+  <g transform="translate(45, 195)">
+    <rect width="95" height="28" rx="6" fill="rgba(32,35,42,0.8)" stroke="rgba(0,0,0,0.3)" stroke-width="1"/>
+    <text x="47" y="19" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">Next.js 16</text>
+    
+    <rect x="105" width="85" height="28" rx="6" fill="rgba(32,35,42,0.8)" stroke="rgba(97,218,251,0.3)" stroke-width="1"/>
+    <text x="147" y="19" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#61dafb">React 19</text>
+    
+    <rect x="200" width="60" height="28" rx="6" fill="rgba(32,35,42,0.8)" stroke="rgba(255,59,59,0.3)" stroke-width="1"/>
+    <text x="230" y="19" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#ff3b3b">TiDB</text>
+    
+    <rect x="270" width="55" height="28" rx="6" fill="rgba(32,35,42,0.8)" stroke="rgba(90,15,200,0.3)" stroke-width="1"/>
+    <text x="297" y="19" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#a371f7">PWA</text>
+  </g>
+  
+  <g transform="translate(45, 250)">
+    <rect width="120" height="40" rx="8" fill="#238636" filter="url(#glow3)">
+      <animate attributeName="fill" values="#238636;#2ea043;#238636" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="120" height="40" rx="8" fill="none" stroke="#2ea043" stroke-width="1.5"/>
+    <text x="60" y="26" font-family="monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#fff">Live Demo →</text>
+    
+    <rect x="135" width="100" height="40" rx="8" fill="rgba(255,255,255,0.05)"/>
+    <rect x="135" width="100" height="40" rx="8" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+    <text x="185" y="26" font-family="monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#8b949e">GitHub →</text>
+  </g>
+  
+  <path d="M 510 30 L 510 50 M 490 30 L 510 30" stroke="rgba(63,185,80,0.4)" stroke-width="2.5" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </path>
+</svg>

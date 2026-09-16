@@ -1,0 +1,128 @@
+<svg width="550" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1f6feb;stop-opacity:1"/>
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.4" flood-color="#000"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#58a6ff" flood-opacity="0.6"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0);stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Card base with 3D depth -->
+  <g filter="url(#shadow)">
+    <rect x="15" y="15" width="520" height="290" rx="16" fill="#0d1117" opacity="0.5"/>
+    <rect x="10" y="10" width="520" height="290" rx="16" fill="url(#cardBg)"/>
+  </g>
+  
+  <!-- Animated accent bar -->
+  <rect x="10" y="10" width="520" height="6" rx="16" fill="url(#accent)">
+    <animate attributeName="height" values="6;8;6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Shimmer effect -->
+  <rect x="10" y="10" width="520" height="290" rx="16" fill="url(#shimmer)" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="-550,0"
+      to="550,0"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Border with glow -->
+  <rect x="10" y="10" width="520" height="290" rx="16" fill="none" stroke="rgba(88,166,255,0.3)" stroke-width="1.5"/>
+  
+  <!-- Icon with pulse -->
+  <g transform="translate(45, 50)">
+    <circle cx="0" cy="0" r="28" fill="rgba(31,111,235,0.2)">
+      <animate attributeName="r" values="28;32;28" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="10" font-size="32" text-anchor="middle" filter="url(#glow)">🏢</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="90" y="50" font-family="'SF Mono', monospace" font-size="28" font-weight="800" fill="#c9d1d9">
+    EquipRent MS
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="90" y="75" font-family="'SF Mono', monospace" font-size="14" fill="#8b949e">
+    PT. Surya Bangun Sarana
+  </text>
+  
+  <!-- Status indicator -->
+  <g transform="translate(450, 50)">
+    <circle cx="0" cy="0" r="5" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="12" y="5" font-family="monospace" font-size="11" fill="#3fb950" font-weight="600">LIVE</text>
+  </g>
+  
+  <!-- Description -->
+  <text x="45" y="115" font-family="'SF Mono', monospace" font-size="15" fill="#c9d1d9">
+    <tspan x="45" dy="0">Heavy equipment rental management with GPS</tspan>
+    <tspan x="45" dy="22">tracking, multi-role authentication, and real-time</tspan>
+    <tspan x="45" dy="22">inventory management. Edge deployed globally.</tspan>
+  </text>
+  
+  <!-- Tech stack -->
+  <g transform="translate(45, 195)">
+    <rect width="90" height="28" rx="6" fill="rgba(32,35,42,0.8)" stroke="rgba(97,218,251,0.3)" stroke-width="1"/>
+    <text x="45" y="19" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#61dafb">React 18</text>
+    
+    <rect x="100" width="100" height="28" rx="6" fill="rgba(32,35,42,0.8)" stroke="rgba(0,122,204,0.3)" stroke-width="1"/>
+    <text x="150" y="19" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#007acc">TypeScript</text>
+    
+    <rect x="210" width="110" height="28" rx="6" fill="rgba(32,35,42,0.8)" stroke="rgba(243,128,32,0.3)" stroke-width="1"/>
+    <text x="265" y="19" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#f38020">CF Workers</text>
+    
+    <rect x="330" width="60" height="28" rx="6" fill="rgba(32,35,42,0.8)" stroke="rgba(255,59,59,0.3)" stroke-width="1"/>
+    <text x="360" y="19" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#ff3b3b">TiDB</text>
+  </g>
+  
+  <!-- Buttons -->
+  <g transform="translate(45, 250)">
+    <!-- Live Demo button with hover glow -->
+    <rect width="120" height="40" rx="8" fill="#238636" filter="url(#glow)">
+      <animate attributeName="fill" values="#238636;#2ea043;#238636" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="120" height="40" rx="8" fill="none" stroke="#2ea043" stroke-width="1.5"/>
+    <text x="60" y="26" font-family="monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#fff">Live Demo →</text>
+    
+    <!-- GitHub button -->
+    <rect x="135" width="100" height="40" rx="8" fill="rgba(255,255,255,0.05)"/>
+    <rect x="135" width="100" height="40" rx="8" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+    <text x="185" y="26" font-family="monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#8b949e">GitHub →</text>
+  </g>
+  
+  <!-- Decorative corner -->
+  <path d="M 510 30 L 510 50 M 490 30 L 510 30" stroke="rgba(88,166,255,0.4)" stroke-width="2.5" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </path>
+</svg>

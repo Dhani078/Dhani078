@@ -1,0 +1,187 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e13;stop-opacity:1">
+        <animate attributeName="stop-color" values="#0a0e13;#0d1117;#0a0e13" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1">
+        <animate attributeName="stop-color" values="#161b22;#1c2128;#161b22" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#ff7b72;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffa657;stop-opacity:1"/>
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#58a6ff" flood-opacity="0.5"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow3d">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="8" dy="8" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(88,166,255,0.08)" stroke-width="1"/>
+    </pattern>
+    
+    <radialGradient id="orb1">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0"/>
+    </radialGradient>
+    
+    <radialGradient id="orb2">
+      <stop offset="0%" style="stop-color:#ffa657;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#ffa657;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Grid with perspective -->
+  <g opacity="0.6">
+    <rect width="1200" height="600" fill="url(#grid)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,60; 0,0"
+        dur="30s"
+        repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Floating orbs (3D depth) -->
+  <ellipse cx="200" cy="150" rx="150" ry="150" fill="url(#orb1)" filter="url(#glow)">
+    <animate attributeName="cx" values="200;250;200" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="150;120;150" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="150;180;150" dur="15s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="1000" cy="450" rx="180" ry="180" fill="url(#orb2)" filter="url(#glow)">
+    <animate attributeName="cx" values="1000;950;1000" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="450;480;450" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="180;210;180" dur="18s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- 3D Isometric platform -->
+  <g transform="translate(600, 250)" opacity="0.15">
+    <!-- Base platform with 3D effect -->
+    <path d="M -200,0 L 0,-100 L 200,0 L 0,100 Z" fill="#58a6ff" opacity="0.2"/>
+    <path d="M -200,0 L 0,100 L 0,120 L -200,20 Z" fill="#1f6feb" opacity="0.3"/>
+    <path d="M 200,0 L 0,100 L 0,120 L 200,20 Z" fill="#0d419d" opacity="0.3"/>
+    
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="600,250; 600,240; 600,250"
+      dur="4s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Main content layer -->
+  <g transform="translate(600, 200)">
+    <!-- 3D Title with depth -->
+    <g filter="url(#shadow3d)">
+      <text x="0" y="0" font-family="'SF Mono', monospace" font-size="96" font-weight="900" text-anchor="middle" fill="url(#textGrad)" filter="url(#glow)">
+        DAN.DEV
+        <animate attributeName="opacity" values="0;1" dur="0.8s" fill="freeze"/>
+      </text>
+    </g>
+    
+    <!-- Subtitle with slide animation -->
+    <g opacity="0">
+      <text x="0" y="50" font-family="'SF Mono', monospace" font-size="24" font-weight="300" text-anchor="middle" fill="#c9d1d9" letter-spacing="2">
+        Muhammad Rizki Ramadhani
+      </text>
+      <animate attributeName="opacity" values="0;1" begin="0.4s" dur="0.6s" fill="freeze"/>
+    </g>
+    
+    <g opacity="0">
+      <text x="0" y="85" font-family="'SF Mono', monospace" font-size="18" text-anchor="middle" fill="#8b949e">
+        Full-stack Software Engineer
+      </text>
+      <animate attributeName="opacity" values="0;1" begin="0.7s" dur="0.6s" fill="freeze"/>
+    </g>
+  </g>
+  
+  <!-- Animated stats bar with 3D depth -->
+  <g transform="translate(200, 450)">
+    <!-- 3D bar background -->
+    <rect x="0" y="0" width="800" height="80" rx="12" fill="#161b22" opacity="0.8" filter="url(#shadow3d)"/>
+    <rect x="0" y="0" width="800" height="80" rx="12" fill="none" stroke="url(#textGrad)" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Stats items -->
+    <g transform="translate(80, 40)">
+      <circle cx="0" cy="0" r="6" fill="#3fb950">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="15" y="5" font-family="monospace" font-size="14" fill="#c9d1d9" font-weight="600">5 APPS IN PRODUCTION</text>
+    </g>
+    
+    <g transform="translate(320, 40)">
+      <circle cx="0" cy="0" r="6" fill="#3fb950">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="15" y="5" font-family="monospace" font-size="14" fill="#c9d1d9" font-weight="600">AVAILABLE FOR INTERNSHIP</text>
+    </g>
+    
+    <g transform="translate(620, 40)">
+      <circle cx="0" cy="0" r="6" fill="#3fb950">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <text x="15" y="5" font-family="monospace" font-size="14" fill="#c9d1d9" font-weight="600">TI SEM 7</text>
+    </g>
+    
+    <!-- Scale animation for entire bar -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="200,450; 200,445; 200,450"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Floating particles -->
+  <g opacity="0.6">
+    <circle cx="150" cy="500" r="3" fill="#58a6ff">
+      <animate attributeName="cy" values="500;100;500" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="550" r="2" fill="#ff7b72">
+      <animate attributeName="cy" values="550;50;550" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="520" r="3" fill="#ffa657">
+      <animate attributeName="cy" values="520;80;520" dur="22s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="22s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="540" r="2" fill="#58a6ff">
+      <animate attributeName="cy" values="540;120;540" dur="19s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="19s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Corner accent lines -->
+  <path d="M 40,40 L 40,80 M 40,40 L 80,40" stroke="#58a6ff" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 1160,40 L 1160,80 M 1160,40 L 1120,40" stroke="#ffa657" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 40,560 L 40,520 M 40,560 L 80,560" stroke="#ff7b72" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 1160,560 L 1160,520 M 1160,560 L 1120,560" stroke="#a371f7" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+</svg>
