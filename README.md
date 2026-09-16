@@ -1,47 +1,136 @@
 <div align="center">
 
-# 👋 Muhammad Rizki Ramadhani
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=DAN.DEV&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=fff&desc=Muhammad%20Rizki%20Ramadhani%20•%20Full-stack%20Developer&descSize=18&descAlignY=55" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=435&lines=Full-stack+Developer;System+Engineer;Open+to+Internship)](https://git.io/typing-svg)
+</div>
 
-**Building production-grade web applications**  
-TI Semester 7 • Banjarmasin, Indonesia
+<div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-DAN.DEV-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://portofolio-dhani078.vercel.app)
-[![Email](https://img.shields.io/badge/Email-dhanisepeda%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhanisepeda@gmail.com)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-%2B62%20821--4856--4979-0d1117?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6282148564979)
+### 🚀 Building Production-Grade Web Applications
+
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-DAN.DEV-FF3B3B?style=for-the-badge&logoColor=white)](https://portofolio-dhani078.vercel.app)
+[![Email](https://img.shields.io/badge/📧_Email-dhanisepeda@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhanisepeda@gmail.com)
+[![WhatsApp](https://img.shields.io/badge/💬_WhatsApp-+62_821--4856--4979-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6282148564979)
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&width=600&height=80&lines=TI+Semester+7+%E2%80%A2+Banjarmasin%2C+Indonesia;Next.js+%E2%80%A2+React+%E2%80%A2+TypeScript+%E2%80%A2+Three.js;Cloudflare+Workers+%E2%80%A2+TiDB+%E2%80%A2+Supabase;%E2%AD%90+Open+to+Internship+Opportunities" alt="Typing SVG" />
+
+<img src="https://komarev.com/ghpvc/?username=Dhani078&label=Profile%20Views&color=58a6ff&style=flat-square" alt="Profile Views" />
 
 </div>
 
 ---
 
-## 🛠️ Tech Stack
+## 🎯 About Me
+
+```typescript
+const dhani = {
+  name: "Muhammad Rizki Ramadhani",
+  role: "Full-stack Developer",
+  location: "Banjarmasin, Indonesia 🇮🇩",
+  education: "Computer Science • Semester 7",
+  brand: "DAN.DEV",
+  
+  currentFocus: [
+    "Building scalable edge applications",
+    "3D web experiences with Three.js",
+    "Serverless architecture"
+  ],
+  
+  lookingFor: "Internship in Software/System Engineering",
+  
+  codePhilosophy: "Clean code, real impact, production-ready"
+};
+```
+
+<details>
+<summary>⚡ More about me</summary>
+
+- 🔭 Currently working on **Embun Laundry Management System**
+- 🌱 Learning **Advanced Three.js & WebGL shaders**
+- 👨‍💻 All projects: [github.com/Dhani078](https://github.com/Dhani078?tab=repositories)
+- 💬 Ask me about **Next.js, React, Cloudflare Workers, TiDB**
+- 🎨 Portfolio: **[DAN.DEV](https://portofolio-dhani078.vercel.app)** - 3D Interactive Experience
+- ⚡ Fun fact: **Building autonomous AI agent loops for development automation**
+
+</details>
+
+---
+
+## 🛠️ Tech Arsenal
 
 <div align="center">
 
-### Frontend
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" />
+<br>Next.js
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
+<br>React
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
+<br>TypeScript
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=threejs" width="48" height="48" alt="Three.js" />
+<br>Three.js
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
+<br>Tailwind
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=cloudflare" width="48" height="48" alt="Cloudflare" />
+<br>Cloudflare
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
+<br>Node.js
+</td>
+</tr>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=supabase" width="48" height="48" alt="Supabase" />
+<br>Supabase
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
+<br>PostgreSQL
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=php" width="48" height="48" alt="PHP" />
+<br>PHP
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=fastapi" width="48" height="48" alt="FastAPI" />
+<br>FastAPI
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
+<br>Docker
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
+<br>Git
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=linux" width="48" height="48" alt="Linux" />
+<br>Linux
+</td>
+</tr>
+</table>
 
-### Backend & Cloud
-![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+</div>
 
-### Database
-![TiDB](https://img.shields.io/badge/TiDB-FF3B3B?style=for-the-badge&logo=databricks&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+<div align="center">
 
-### Tools & DevOps
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+**Frontend** • Next.js • React • TypeScript • Three.js/R3F • Tailwind • Rapier Physics  
+**Backend** • Cloudflare Workers • Node.js • PHP • FastAPI  
+**Database** • TiDB • Supabase • PostgreSQL  
+**DevOps** • Docker • Linux • Git • XAMPP • Vercel
 
 </div>
 
@@ -51,175 +140,256 @@ TI Semester 7 • Banjarmasin, Indonesia
 
 <div align="center">
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
 ### 🏢 EquipRent Management System
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://equiprent-pt-surya-bangun-sarana.dhanisepeda.workers.dev)
-[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/Dhani078/equiprent-pt-surya-bangun-sarana)
 
-Equipment rental management for PT. Surya Bangun Sarana
+<a href="https://equiprent-pt-surya-bangun-sarana.dhanisepeda.workers.dev">
+<img src="https://img.shields.io/badge/🌐_Live_Demo-equiprent-brightgreen?style=for-the-badge" />
+</a>
+<a href="https://github.com/Dhani078/equiprent-pt-surya-bangun-sarana">
+<img src="https://img.shields.io/badge/📂_Repository-GitHub-181717?style=for-the-badge&logo=github" />
+</a>
 
-**Stack**: React 18 • TypeScript • Cloudflare Workers • TiDB
+**Production equipment rental system for PT. Surya Bangun Sarana**
 
-**Features**:
-- 🔐 Role-based access (Admin/Staff/User)
-- 📊 Real-time inventory tracking
-- 💳 Transaction management
-- 📱 Responsive design
+![React](https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![TiDB](https://img.shields.io/badge/TiDB-FF3B3B?style=flat-square&logo=databricks&logoColor=white)
 
-</td>
-<td width="50%" valign="top">
-
-### 🧺 Embun Laundry
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://embun-laundry.dhanisepeda.workers.dev)
-[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/Dhani078/dhani-laundry)
-
-Modern laundry management system
-
-**Stack**: Cloudflare Workers • TiDB • Responsive UI
-
-**Features**:
-- 📦 Order tracking
-- 💰 Payment management
-- 👥 Customer database
-- 📈 Analytics dashboard
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 🎨 DAN.DEV Portfolio
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://portofolio-dhani078.vercel.app)
-[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/Dhani078/Portofolio)
-
-3D interactive portfolio with physics-based ID card
-
-**Stack**: Next.js 16 • React 19 • Three.js • Rapier Physics
-
-**Features**:
-- 🎮 Interactive 3D lanyard
-- 🎯 R3F/Rapier physics
-- 🌙 Supabase backend
-- ⚡ Tailwind v4
-
-</td>
-<td width="50%" valign="top">
-
-### 💰 KasDesk PWA
-[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/Dhani078/KasDesk)
-
-Cash desk management with OCR receipt scanning
-
-**Stack**: Next.js • Gemini Vision API • PWA
-
-**Features**:
-- 📸 OCR receipt scanning
-- 💵 Transaction logging
-- 📱 Offline-capable PWA
-- 🤖 AI-powered data extraction
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 🎬 AutoClip
-[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/Dhani078/AutoClip)
-
-Video transcription and auto-captioning pipeline
-
-**Stack**: FastAPI • OpenCV • Faster-Whisper
-
-**Features**:
-- 🎤 Speech-to-text transcription
-- 🎞️ Video processing
-- 📝 Auto-generated captions
-- ⚡ Fast processing pipeline
-
-</td>
-<td width="50%" valign="top">
-
-### 📦 More Projects
-[![GitHub](https://img.shields.io/badge/View_All-Repositories-181717?style=for-the-badge&logo=github)](https://github.com/Dhani078?tab=repositories)
-
-Check out my other projects:
-- **Vaultify** - Secure password manager
-- **PT. Surya Bangun Sarana ERP** - PHP enterprise system
-- And more...
-
-</td>
-</tr>
-
-</table>
-
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Dhani078&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&count_private=true" alt="GitHub Stats" height="170" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Dhani078&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" height="170" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dhani078&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" alt="Top Languages" height="170" />
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Dhani078&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9" alt="Contribution Graph" height="170" />
-
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=Dhani078&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
-
-## 💼 What I'm Looking For
-
-```typescript
-const internshipGoals = {
-  role: ["Software Engineer", "System Engineer", "Full-stack Developer"],
-  interests: ["Web Development", "Cloud Infrastructure", "System Design"],
-  location: "Banjarmasin, Indonesia",
-  available: "Immediately",
-  workType: ["On-site", "Hybrid", "Remote"],
-  focus: "Real coding projects with portfolio output, not admin work"
-};
+```
+✨ Features
+├─ 🔐 Role-based authentication (Admin/Staff/User)
+├─ 📊 Real-time inventory management
+├─ 💳 Transaction processing & history
+├─ 📱 Fully responsive dashboard
+└─ 🚀 Edge-deployed for global performance
 ```
 
-**Target Companies**:
-- 🔧 **OJT Informatika** - Linux, Docker, OJS
-- 💻 **BanjarKode** - Software development
-- 🚀 **iTech Space** - Tech innovation
-- 🏢 **Cipta Dewantara** - Enterprise systems
-- 🏛️ Government agencies (Bappeda, Disbudporapar, DPMPTSP, Disdukcapil)
+---
+
+### 🧺 Embun Laundry
+
+<a href="https://embun-laundry.dhanisepeda.workers.dev">
+<img src="https://img.shields.io/badge/🌐_Live_Demo-embun--laundry-brightgreen?style=for-the-badge" />
+</a>
+<a href="https://github.com/Dhani078/dhani-laundry">
+<img src="https://img.shields.io/badge/📂_Repository-GitHub-181717?style=for-the-badge&logo=github" />
+</a>
+
+**Modern laundry management system with real-time tracking**
+
+![Cloudflare](https://img.shields.io/badge/Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![TiDB](https://img.shields.io/badge/TiDB-FF3B3B?style=flat-square&logo=databricks&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+```
+✨ Features
+├─ 📦 Order tracking & status updates
+├─ 💰 Payment & invoice management
+├─ 👥 Customer database & history
+├─ 📈 Analytics & reporting dashboard
+└─ ⚡ Serverless architecture
+```
 
 ---
 
-## 📫 Connect With Me
+### 🎨 DAN.DEV Portfolio
+
+<a href="https://portofolio-dhani078.vercel.app">
+<img src="https://img.shields.io/badge/🌐_Live_Demo-DAN.DEV-brightgreen?style=for-the-badge" />
+</a>
+<a href="https://github.com/Dhani078/Portofolio">
+<img src="https://img.shields.io/badge/📂_Repository-GitHub-181717?style=for-the-badge&logo=github" />
+</a>
+
+**3D interactive portfolio with physics-based ID card lanyard**
+
+![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+
+```
+✨ Features
+├─ 🎮 Interactive 3D lanyard with ID card
+├─ ⚡ React Three Fiber + Rapier physics
+├─ 🎯 Front/back UV-mapped card design
+├─ 🌙 Dark-themed "God Mode" aesthetic
+└─ 📱 Responsive 3D experience
+```
+
+---
+
+### 💰 KasDesk PWA
+
+<a href="https://github.com/Dhani078/KasDesk">
+<img src="https://img.shields.io/badge/📂_Repository-GitHub-181717?style=for-the-badge&logo=github" />
+</a>
+
+**Cash desk management with AI-powered OCR receipt scanning**
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini_AI-8E75B2?style=flat-square&logo=google&logoColor=white)
+
+```
+✨ Features
+├─ 📸 OCR receipt scanning (Gemini Vision API)
+├─ 💵 Transaction logging & categorization
+├─ 📱 Offline-capable Progressive Web App
+├─ 🤖 AI-powered data extraction
+└─ 📊 Financial reports & analytics
+```
+
+---
+
+### 🎬 AutoClip
+
+<a href="https://github.com/Dhani078/AutoClip">
+<img src="https://img.shields.io/badge/📂_Repository-GitHub-181717?style=for-the-badge&logo=github" />
+</a>
+
+**Video transcription and auto-captioning pipeline**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+```
+✨ Features
+├─ 🎤 Speech-to-text (Faster-Whisper)
+├─ 🎞️ Video processing pipeline
+├─ 📝 Auto-generated captions
+└─ ⚡ Optimized for speed
+```
+
+</div>
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-DAN.DEV-0d1117?style=for-the-badge)](https://portofolio-dhani078.vercel.app)
-[![Email](https://img.shields.io/badge/📧_Email-dhanisepeda@gmail.com-0d1117?style=for-the-badge)](mailto:dhanisepeda@gmail.com)
-[![WhatsApp](https://img.shields.io/badge/💬_WhatsApp-+62_821--4856--4979-0d1117?style=for-the-badge)](https://wa.me/6282148564979)
-[![GitHub](https://img.shields.io/badge/💻_GitHub-Dhani078-0d1117?style=for-the-badge)](https://github.com/Dhani078)
+**[→ View All Repositories](https://github.com/Dhani078?tab=repositories)**
+
+</div>
 
 ---
 
-<img src="https://komarev.com/ghpvc/?username=Dhani078&label=Profile%20Views&color=58a6ff&style=for-the-badge" alt="Profile Views" />
+## 📊 GitHub Analytics
 
-**⭐ Open to internship opportunities • Let's build something great together**
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Dhani078&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&count_private=true&include_all_commits=true" alt="GitHub Stats" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Dhani078&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" width="49%" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Dhani078&custom_title=Contribution%20Graph&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&hide_border=true" alt="Contribution Graph" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dhani078&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=10&exclude_repo=repo1,repo2" alt="Top Languages" width="49%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dhani078&theme=github_dark&utcOffset=8" alt="Productive Time" width="49%" />
+
+</div>
+
+---
+
+## 🏆 Achievements
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=Dhani078&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10&rank=-C,-?)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+---
+
+## 💼 Open to Internship Opportunities
+
+<div align="center">
+
+```typescript
+interface InternshipPreferences {
+  role: string[];
+  interests: string[];
+  location: string;
+  workType: string[];
+  availability: string;
+  focus: string;
+}
+
+const seekingInternship: InternshipPreferences = {
+  role: [
+    "Software Engineer",
+    "Full-stack Developer", 
+    "System Engineer",
+    "Cloud/Edge Engineer"
+  ],
+  
+  interests: [
+    "Web Development (Next.js, React)",
+    "Serverless Architecture (Cloudflare Workers)",
+    "3D Web Experiences (Three.js, R3F)",
+    "Cloud Infrastructure & DevOps",
+    "System Design & Scalability"
+  ],
+  
+  location: "Banjarmasin, Indonesia",
+  workType: ["On-site", "Hybrid", "Remote"],
+  availability: "Immediately available",
+  focus: "Real coding projects with portfolio output, not admin/content work"
+};
+
+// Target companies
+const targetCompanies = [
+  "OJT Informatika (Linux, Docker, Open Journal Systems)",
+  "BanjarKode",
+  "iTech Space", 
+  "Cipta Dewantara",
+  "Government: Bappeda Litbang, Disbudporapar, DPMPTSP, Disdukcapil"
+];
+```
+
+</div>
+
+---
+
+## 📬 Let's Connect
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<a href="https://portofolio-dhani078.vercel.app">
+<img src="https://img.icons8.com/fluency/96/domain.png" width="64" />
+<br><b>Portfolio</b>
+<br>DAN.DEV
+</a>
+</td>
+<td align="center">
+<a href="mailto:dhanisepeda@gmail.com">
+<img src="https://img.icons8.com/fluency/96/gmail.png" width="64" />
+<br><b>Email</b>
+<br>dhanisepeda@gmail.com
+</a>
+</td>
+<td align="center">
+<a href="https://wa.me/6282148564979">
+<img src="https://img.icons8.com/fluency/96/whatsapp.png" width="64" />
+<br><b>WhatsApp</b>
+<br>+62 821-4856-4979
+</a>
+</td>
+<td align="center">
+<a href="https://github.com/Dhani078">
+<img src="https://img.icons8.com/fluency/96/github.png" width="64" />
+<br><b>GitHub</b>
+<br>@Dhani078
+</a>
+</td>
+</tr>
+</table>
+
+---
+
+### 💡 "Clean code, real impact, production-ready"
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
 
 </div>
