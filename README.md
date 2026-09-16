@@ -14,6 +14,8 @@ Full-stack Software Engineer
 
 `Banjarmasin, Indonesia` • `TI Semester 7 UNISKA` • `Open to Internship`
 
+**[→ View Animated Profile](https://dhani078.github.io/Dhani078/animated-profile.html)** ✨
+
 </div>
 
 ```diff
