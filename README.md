@@ -8,7 +8,7 @@
 
 ### 🚀 Building Production-Grade Web Applications
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-DAN.DEV-FF3B3B?style=for-the-badge&logoColor=white)](https://portofolio-dhani078.vercel.app)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-DAN.DEV-FF3B3B?style=for-the-badge&logoColor=white)](https://portofoliodan-lovat.vercel.app)
 [![Email](https://img.shields.io/badge/📧_Email-dhanisepeda@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhanisepeda@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/💬_WhatsApp-+62_821--4856--4979-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6282148564979)
 
@@ -49,7 +49,7 @@ const dhani = {
 - 🌱 Learning **Advanced Three.js & WebGL shaders**
 - 👨‍💻 All projects: [github.com/Dhani078](https://github.com/Dhani078?tab=repositories)
 - 💬 Ask me about **Next.js, React, Cloudflare Workers, TiDB**
-- 🎨 Portfolio: **[DAN.DEV](https://portofolio-dhani078.vercel.app)** - 3D Interactive Experience
+- 🎨 Portfolio: **[DAN.DEV](https://portofoliodan-lovat.vercel.app)** - 3D Interactive Experience
 - ⚡ Fun fact: **Building autonomous AI agent loops for development automation**
 
 </details>
@@ -195,7 +195,7 @@ const dhani = {
 
 ### 🎨 DAN.DEV Portfolio
 
-<a href="https://portofolio-dhani078.vercel.app">
+<a href="https://portofoliodan-lovat.vercel.app">
 <img src="https://img.shields.io/badge/🌐_Live_Demo-DAN.DEV-brightgreen?style=for-the-badge" />
 </a>
 <a href="https://github.com/Dhani078/Portofolio">
@@ -222,23 +222,27 @@ const dhani = {
 
 ### 💰 KasDesk PWA
 
+<a href="https://kas-desk.vercel.app">
+<img src="https://img.shields.io/badge/🌐_Live_Demo-KasDesk-brightgreen?style=for-the-badge" />
+</a>
 <a href="https://github.com/Dhani078/KasDesk">
 <img src="https://img.shields.io/badge/📂_Repository-GitHub-181717?style=for-the-badge&logo=github" />
 </a>
 
-**Cash desk management with AI-powered OCR receipt scanning**
+**Personal finance & wealth tracker with OCR receipt scanning**
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TiDB](https://img.shields.io/badge/TiDB-FF3B3B?style=flat-square&logo=databricks&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini_AI-8E75B2?style=flat-square&logo=google&logoColor=white)
 
 ```
 ✨ Features
 ├─ 📸 OCR receipt scanning (Gemini Vision API)
-├─ 💵 Transaction logging & categorization
-├─ 📱 Offline-capable Progressive Web App
-├─ 🤖 AI-powered data extraction
-└─ 📊 Financial reports & analytics
+├─ 💵 Multi-wallet transaction tracking
+├─ 📱 Offline-first PWA with sync queue
+├─ 🔐 Biometric & PIN protection
+└─ 📊 Cash flow reports & trends
 ```
 
 ---
@@ -356,7 +360,7 @@ const targetCompanies = [
 <table>
 <tr>
 <td align="center">
-<a href="https://portofolio-dhani078.vercel.app">
+<a href="https://portofoliodan-lovat.vercel.app">
 <img src="https://img.icons8.com/fluency/96/domain.png" width="64" />
 <br><b>Portfolio</b>
 <br>DAN.DEV
