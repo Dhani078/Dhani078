@@ -1,0 +1,75 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentBar3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a371f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d29bfb;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow3">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="500" height="300" rx="12" fill="url(#cardBg3)" filter="url(#shadow3)"/>
+  <rect width="500" height="4" fill="url(#accentBar3)"/>
+  <rect width="500" height="300" rx="12" fill="none" stroke="rgba(163, 113, 247, 0.2)" stroke-width="1"/>
+  
+  <circle cx="40" cy="45" r="20" fill="#8957e5" opacity="0.2"/>
+  <text x="40" y="52" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle" fill="#a371f7">🎨</text>
+  
+  <text x="75" y="45" font-family="'SF Mono', monospace" font-size="22" font-weight="700" fill="#c9d1d9">
+    DAN.DEV Portfolio
+  </text>
+  
+  <text x="75" y="65" font-family="'SF Mono', monospace" font-size="13" fill="#8b949e">
+    3D Interactive Experience
+  </text>
+  
+  <text x="30" y="100" font-family="'SF Mono', monospace" font-size="14" fill="#c9d1d9">
+    <tspan x="30" dy="0">Physics-based 3D portfolio with R3F + Rapier.</tspan>
+    <tspan x="30" dy="20">Interactive ID card lanyard, UV-mapped design,</tspan>
+    <tspan x="30" dy="20">and smooth animations.</tspan>
+  </text>
+  
+  <g transform="translate(30, 170)">
+    <rect width="85" height="24" rx="4" fill="#000"/>
+    <text x="42" y="16" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#fff">Next.js 16</text>
+    
+    <rect x="95" width="75" height="24" rx="4" fill="#20232a"/>
+    <text x="132" y="16" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#61dafb">React 19</text>
+    
+    <rect x="180" width="75" height="24" rx="4" fill="#000"/>
+    <text x="217" y="16" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#fff">Three.js</text>
+    
+    <rect x="265" width="80" height="24" rx="4" fill="#3ecf8e"/>
+    <text x="305" y="16" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#000">Supabase</text>
+  </g>
+  
+  <g transform="translate(30, 220)">
+    <circle cx="0" cy="0" r="3" fill="#3fb950"/>
+    <text x="10" y="4" font-family="monospace" font-size="12" fill="#8b949e">Vercel Deployed</text>
+    
+    <text x="130" y="4" font-family="monospace" font-size="12" fill="#8b949e">🎮 Interactive</text>
+    
+    <text x="245" y="4" font-family="monospace" font-size="12" fill="#8b949e">⚡ Physics</text>
+  </g>
+  
+  <g transform="translate(30, 255)">
+    <rect width="100" height="32" rx="6" fill="#238636"/>
+    <rect width="100" height="32" rx="6" fill="none" stroke="#2ea043" stroke-width="1"/>
+    <text x="50" y="21" font-family="monospace" font-size="13" font-weight="600" text-anchor="middle" fill="#fff">Live Demo →</text>
+  </g>
+  
+  <g transform="translate(145, 255)">
+    <rect width="90" height="32" rx="6" fill="rgba(255,255,255,0.05)"/>
+    <rect width="90" height="32" rx="6" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="45" y="21" font-family="monospace" font-size="13" font-weight="600" text-anchor="middle" fill="#8b949e">GitHub →</text>
+  </g>
+  
+  <path d="M 480 20 L 480 40 M 460 20 L 480 20" stroke="rgba(163, 113, 247, 0.3)" stroke-width="2" stroke-linecap="round"/>
+</svg>

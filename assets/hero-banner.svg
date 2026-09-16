@@ -1,0 +1,131 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff7b72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffa657;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(88, 166, 255, 0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern -->
+  <rect width="1200" height="400" fill="url(#grid)" opacity="0.5">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="0 0"
+      to="0 50"
+      dur="20s"
+      repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Orbiting circles -->
+  <g transform="translate(600, 200)">
+    <!-- Outer orbit -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="rgba(88, 166, 255, 0.15)" stroke-width="1">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 0 0"
+        to="360 0 0"
+        dur="30s"
+        repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Middle orbit -->
+    <circle cx="0" cy="0" r="130" fill="none" stroke="rgba(255, 123, 114, 0.15)" stroke-width="1">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="360 0 0"
+        to="0 0 0"
+        dur="25s"
+        repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Inner orbit -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="rgba(255, 166, 87, 0.15)" stroke-width="1">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 0 0"
+        to="360 0 0"
+        dur="20s"
+        repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Floating particles -->
+  <g opacity="0.6">
+    <circle cx="100" cy="350" r="2" fill="#58a6ff">
+      <animate attributeName="cy" values="350;50;350" dur="15s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="15s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="380" r="2" fill="#ff7b72">
+      <animate attributeName="cy" values="380;80;380" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="370" r="2" fill="#ffa657">
+      <animate attributeName="cy" values="370;70;370" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="360" r="2" fill="#58a6ff">
+      <animate attributeName="cy" values="360;60;360" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Main text -->
+  <text x="600" y="180" font-family="'SF Mono', 'Fira Code', monospace" font-size="84" font-weight="900" text-anchor="middle" fill="url(#textGradient)" filter="url(#glow)">
+    DAN.DEV
+    <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="220" font-family="'SF Mono', monospace" font-size="22" font-weight="300" text-anchor="middle" fill="#c9d1d9" letter-spacing="2">
+    Muhammad Rizki Ramadhani
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.3s" fill="freeze"/>
+  </text>
+  
+  <text x="600" y="250" font-family="'SF Mono', monospace" font-size="18" font-weight="400" text-anchor="middle" fill="#8b949e">
+    Full-stack Software Engineer
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze"/>
+  </text>
+  
+  <!-- Status indicators -->
+  <g transform="translate(350, 320)">
+    <circle cx="0" cy="0" r="4" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="12" y="5" font-family="'SF Mono', monospace" font-size="12" fill="#8b949e" letter-spacing="1">AVAILABLE FOR INTERNSHIP</text>
+    
+    <circle cx="250" cy="0" r="4" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="262" y="5" font-family="'SF Mono', monospace" font-size="12" fill="#8b949e" letter-spacing="1">BANJARMASIN</text>
+    
+    <circle cx="410" cy="0" r="4" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="422" y="5" font-family="'SF Mono', monospace" font-size="12" fill="#8b949e" letter-spacing="1">TI SEM 7</text>
+  </g>
+</svg>

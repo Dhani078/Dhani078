@@ -1,0 +1,154 @@
+<svg width="1200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skillBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#161b22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="200" fill="url(#skillBg)"/>
+  
+  <!-- Frontend Section -->
+  <g transform="translate(50, 30)">
+    <text x="0" y="0" font-family="'SF Mono', monospace" font-size="14" font-weight="700" fill="#58a6ff" letter-spacing="2">FRONTEND</text>
+    
+    <!-- Next.js -->
+    <g transform="translate(0, 25)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="190" height="6" rx="3" fill="#000">
+        <animate attributeName="width" from="0" to="190" dur="1.5s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">Next.js 16</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Expert</text>
+    </g>
+    
+    <!-- React -->
+    <g transform="translate(0, 50)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="195" height="6" rx="3" fill="#61dafb">
+        <animate attributeName="width" from="0" to="195" dur="1.5s" begin="0.2s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">React 19</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Expert</text>
+    </g>
+    
+    <!-- TypeScript -->
+    <g transform="translate(0, 75)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="188" height="6" rx="3" fill="#007acc">
+        <animate attributeName="width" from="0" to="188" dur="1.5s" begin="0.4s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">TypeScript</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Expert</text>
+    </g>
+    
+    <!-- Three.js -->
+    <g transform="translate(0, 100)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="170" height="6" rx="3" fill="#fff">
+        <animate attributeName="width" from="0" to="170" dur="1.5s" begin="0.6s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">Three.js / R3F</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Advanced</text>
+    </g>
+  </g>
+  
+  <!-- Backend Section -->
+  <g transform="translate(400, 30)">
+    <text x="0" y="0" font-family="'SF Mono', monospace" font-size="14" font-weight="700" fill="#ff7b72" letter-spacing="2">BACKEND & CLOUD</text>
+    
+    <!-- Cloudflare Workers -->
+    <g transform="translate(0, 25)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="192" height="6" rx="3" fill="#f38020">
+        <animate attributeName="width" from="0" to="192" dur="1.5s" begin="0.3s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">CF Workers</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Expert</text>
+    </g>
+    
+    <!-- Node.js -->
+    <g transform="translate(0, 50)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="185" height="6" rx="3" fill="#339933">
+        <animate attributeName="width" from="0" to="185" dur="1.5s" begin="0.5s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">Node.js</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Advanced</text>
+    </g>
+    
+    <!-- TiDB -->
+    <g transform="translate(0, 75)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="190" height="6" rx="3" fill="#ff3b3b">
+        <animate attributeName="width" from="0" to="190" dur="1.5s" begin="0.7s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">TiDB</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Expert</text>
+    </g>
+    
+    <!-- PostgreSQL -->
+    <g transform="translate(0, 100)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="188" height="6" rx="3" fill="#316192">
+        <animate attributeName="width" from="0" to="188" dur="1.5s" begin="0.9s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">PostgreSQL</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Expert</text>
+    </g>
+  </g>
+  
+  <!-- Tools Section -->
+  <g transform="translate(750, 30)">
+    <text x="0" y="0" font-family="'SF Mono', monospace" font-size="14" font-weight="700" fill="#a371f7" letter-spacing="2">TOOLS & DEVOPS</text>
+    
+    <!-- Git -->
+    <g transform="translate(0, 25)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="195" height="6" rx="3" fill="#f05032">
+        <animate attributeName="width" from="0" to="195" dur="1.5s" begin="0.4s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">Git & GitHub</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Expert</text>
+    </g>
+    
+    <!-- Docker -->
+    <g transform="translate(0, 50)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="175" height="6" rx="3" fill="#2496ed">
+        <animate attributeName="width" from="0" to="175" dur="1.5s" begin="0.6s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">Docker</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Advanced</text>
+    </g>
+    
+    <!-- Linux -->
+    <g transform="translate(0, 75)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="180" height="6" rx="3" fill="#fcc624">
+        <animate attributeName="width" from="0" to="180" dur="1.5s" begin="0.8s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">Linux</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Advanced</text>
+    </g>
+    
+    <!-- Vercel -->
+    <g transform="translate(0, 100)">
+      <rect width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+      <rect width="190" height="6" rx="3" fill="#000">
+        <animate attributeName="width" from="0" to="190" dur="1.5s" begin="1s" fill="freeze"/>
+      </rect>
+      <text x="0" y="-8" font-family="monospace" font-size="12" fill="#c9d1d9">Vercel</text>
+      <text x="205" y="5" font-family="monospace" font-size="11" fill="#8b949e">Expert</text>
+    </g>
+  </g>
+</svg>
