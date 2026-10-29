@@ -19,36 +19,23 @@
       <stop offset="100%" stop-color="#dc2626" />
     </linearGradient>
   </defs>
-
-  <!-- Card Background -->
   <rect width="580" height="320" rx="16" fill="url(#warCardBg)" stroke="#450a0a" stroke-width="1.5" />
-  
-  <!-- Top Accent Bar -->
   <rect x="0" y="0" width="580" height="6" rx="8" fill="url(#warAccentGrad)" />
-
-  <!-- Card Header Area -->
   <g transform="translate(28, 30)">
-    <!-- Icon Box -->
     <rect width="44" height="44" rx="10" fill="#7f1d1d" fill-opacity="0.3" stroke="#ef4444" stroke-width="1.2" />
     <text x="22" y="28" font-size="22" text-anchor="middle">🎟️</text>
-
-    <!-- Title &amp; Sub -->
     <text x="56" y="22" class="sans" font-size="18" font-weight="800" fill="#f8fafc">
       WarTicket Engine
     </text>
     <text x="56" y="38" class="mono" font-size="11" fill="#f87171">
       ATOMIC CONCURRENCY • ZERO-OVERSELL FLASH SALE
     </text>
-
-    <!-- Status Pill -->
     <g transform="translate(380, 8)">
       <rect width="144" height="26" rx="13" fill="#7f1d1d" stroke="#ef4444" stroke-width="1" />
       <circle cx="14" cy="13" r="4" fill="#f87171" style="animation: cardPulseWar 2s infinite;" />
       <text x="26" y="17" class="mono" font-size="10" font-weight="700" fill="#fca5a5">HIGH CONCURRENCY</text>
     </g>
   </g>
-
-  <!-- Description Body -->
   <g transform="translate(28, 95)">
     <text x="0" y="14" class="sans" font-size="13.5" fill="#cbd5e1" font-weight="500">
       High-Throughput Ticket Booking Engine with Atomic Race Guarantees.
@@ -60,30 +47,21 @@
       distributed lock with auto-expiry, and Saga compensation rollback.
     </text>
   </g>
-
-  <!-- Key Architectural Highlights Grid -->
   <g transform="translate(28, 175)">
-    <!-- Box 1 -->
     <rect width="166" height="58" rx="8" fill="#200b0b" stroke="#450a0a" stroke-width="1" />
     <text x="14" y="22" class="mono" font-size="10" fill="#f87171">ATOMICITY</text>
     <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#fecaca">Redis Lua EVALSHA</text>
-
-    <!-- Box 2 -->
     <g transform="translate(178, 0)">
       <rect width="166" height="58" rx="8" fill="#200b0b" stroke="#450a0a" stroke-width="1" />
       <text x="14" y="22" class="mono" font-size="10" fill="#f87171">BACKEND API</text>
       <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#38bdf8">FastAPI + AsyncIO</text>
     </g>
-
-    <!-- Box 3 -->
     <g transform="translate(356, 0)">
       <rect width="166" height="58" rx="8" fill="#200b0b" stroke="#450a0a" stroke-width="1" />
       <text x="14" y="22" class="mono" font-size="10" fill="#f87171">PERSISTENCE</text>
       <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#34d399">Neon PgBouncer</text>
     </g>
   </g>
-
-  <!-- Tech Badges Footer -->
   <g transform="translate(28, 256)">
     <g transform="translate(0, 0)">
       <rect width="84" height="26" rx="6" fill="#450a0a" stroke="#b91c1c" stroke-width="0.8" />
@@ -106,8 +84,6 @@
       <text x="65" y="17" class="mono" font-size="11" font-weight="600" fill="#fecaca" text-anchor="middle">Saga Rollback</text>
     </g>
   </g>
-
-  <!-- Action Hint -->
   <text x="550" y="302" class="mono" font-size="10" fill="#f87171" text-anchor="end">
     VIEW WAR-TICKET REPO →
   </text>

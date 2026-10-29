@@ -19,36 +19,23 @@
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
   </defs>
-
-  <!-- Card Background -->
   <rect width="580" height="320" rx="16" fill="url(#portCardBg)" stroke="#1e3a5f" stroke-width="1.5" />
-  
-  <!-- Top Accent Bar -->
   <rect x="0" y="0" width="580" height="6" rx="8" fill="url(#portAccentGrad)" />
-
-  <!-- Card Header Area -->
   <g transform="translate(28, 30)">
-    <!-- Icon Box -->
     <rect width="44" height="44" rx="10" fill="#0369a1" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.2" />
     <text x="22" y="28" font-size="22" text-anchor="middle">🎨</text>
-
-    <!-- Title &amp; Sub -->
     <text x="56" y="22" class="sans" font-size="18" font-weight="800" fill="#f8fafc">
       DAN.DEV Portfolio
     </text>
     <text x="56" y="38" class="mono" font-size="11" fill="#38bdf8">
       3D INTERACTIVE PHYSICS-DRIVEN PORTFOLIO
     </text>
-
-    <!-- Live Status Pill -->
     <g transform="translate(380, 8)">
       <rect width="144" height="26" rx="13" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
       <circle cx="14" cy="13" r="4" fill="#38bdf8" style="animation: cardPulsePort 2s infinite;" />
       <text x="26" y="17" class="mono" font-size="10" font-weight="700" fill="#bae6fd">3D RUNTIME LIVE</text>
     </g>
   </g>
-
-  <!-- Description Body -->
   <g transform="translate(28, 95)">
     <text x="0" y="14" class="sans" font-size="13.5" fill="#cbd5e1" font-weight="500">
       Personal Brand &amp; 3D Engineering Experience Showcase.
@@ -60,30 +47,21 @@
       60 FPS WebGL canvas rendering, and Supabase integration.
     </text>
   </g>
-
-  <!-- Key Architectural Highlights Grid -->
   <g transform="translate(28, 175)">
-    <!-- Box 1 -->
     <rect width="166" height="58" rx="8" fill="#0f1f33" stroke="#1e3a5f" stroke-width="1" />
     <text x="14" y="22" class="mono" font-size="10" fill="#93c5fd">PHYSICS ENGINE</text>
     <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#e0f2fe">Rapier + R3F 3D</text>
-
-    <!-- Box 2 -->
     <g transform="translate(178, 0)">
       <rect width="166" height="58" rx="8" fill="#0f1f33" stroke="#1e3a5f" stroke-width="1" />
       <text x="14" y="22" class="mono" font-size="10" fill="#93c5fd">FRAMEWORK</text>
       <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#38bdf8">Next 16 + React 19</text>
     </g>
-
-    <!-- Box 3 -->
     <g transform="translate(356, 0)">
       <rect width="166" height="58" rx="8" fill="#0f1f33" stroke="#1e3a5f" stroke-width="1" />
       <text x="14" y="22" class="mono" font-size="10" fill="#93c5fd">STYLING</text>
       <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#c084fc">Tailwind CSS v4</text>
     </g>
   </g>
-
-  <!-- Tech Badges Footer -->
   <g transform="translate(28, 256)">
     <g transform="translate(0, 0)">
       <rect width="90" height="26" rx="6" fill="#1e3a5f" stroke="#38bdf8" stroke-width="0.8" />
@@ -106,8 +84,6 @@
       <text x="47" y="17" class="mono" font-size="11" font-weight="600" fill="#e0f2fe" text-anchor="middle">Supabase</text>
     </g>
   </g>
-
-  <!-- Action Hint -->
   <text x="550" y="302" class="mono" font-size="10" fill="#38bdf8" text-anchor="end">
     EXPLORE 3D CANVAS →
   </text>

@@ -19,36 +19,23 @@
       <stop offset="100%" stop-color="#14b8a6" />
     </linearGradient>
   </defs>
-
-  <!-- Card Background -->
   <rect width="580" height="320" rx="16" fill="url(#kiosCardBg)" stroke="#0e3a5a" stroke-width="1.5" />
-  
-  <!-- Top Accent Bar -->
   <rect x="0" y="0" width="580" height="6" rx="8" fill="url(#kiosAccentGrad)" />
-
-  <!-- Card Header Area -->
   <g transform="translate(28, 30)">
-    <!-- Icon Box -->
     <rect width="44" height="44" rx="10" fill="#083344" fill-opacity="0.3" stroke="#06b6d4" stroke-width="1.2" />
     <text x="22" y="28" font-size="22" text-anchor="middle">🛍️</text>
-
-    <!-- Title &amp; Sub -->
     <text x="56" y="22" class="sans" font-size="18" font-weight="800" fill="#f8fafc">
       KiosAI
     </text>
     <text x="56" y="38" class="mono" font-size="11" fill="#22d3ee">
       MULTI-MODEL TOKEN GATEWAY &amp; COMMERCE
     </text>
-
-    <!-- Live Status Pill -->
     <g transform="translate(380, 8)">
       <rect width="144" height="26" rx="13" fill="#164e63" stroke="#06b6d4" stroke-width="1" />
       <circle cx="14" cy="13" r="4" fill="#22d3ee" style="animation: cardPulseKios 2s infinite;" />
       <text x="26" y="17" class="mono" font-size="10" font-weight="700" fill="#cffafe">PRODUCTION STORE</text>
     </g>
   </g>
-
-  <!-- Description Body -->
   <g transform="translate(28, 95)">
     <text x="0" y="14" class="sans" font-size="13.5" fill="#cbd5e1" font-weight="500">
       Self-Serve Digital Commerce Platform &amp; Model Aggregator.
@@ -60,30 +47,21 @@
       Compare-And-Swap (CAS) token balance ledger, and edge streaming gateway.
     </text>
   </g>
-
-  <!-- Key Architectural Highlights Grid -->
   <g transform="translate(28, 175)">
-    <!-- Box 1 -->
     <rect width="166" height="58" rx="8" fill="#0e2338" stroke="#154366" stroke-width="1" />
     <text x="14" y="22" class="mono" font-size="10" fill="#67e8f9">TOKEN BALANCE</text>
     <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#e0f2fe">CAS Atomic Ledger</text>
-
-    <!-- Box 2 -->
     <g transform="translate(178, 0)">
       <rect width="166" height="58" rx="8" fill="#0e2338" stroke="#154366" stroke-width="1" />
       <text x="14" y="22" class="mono" font-size="10" fill="#67e8f9">GATEWAY</text>
       <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#a7f3d0">Edge Gateway API</text>
     </g>
-
-    <!-- Box 3 -->
     <g transform="translate(356, 0)">
       <rect width="166" height="58" rx="8" fill="#0e2338" stroke="#154366" stroke-width="1" />
       <text x="14" y="22" class="mono" font-size="10" fill="#67e8f9">DOMAIN</text>
       <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#fde047">tokoai.my.id</text>
     </g>
   </g>
-
-  <!-- Tech Badges Footer -->
   <g transform="translate(28, 256)">
     <g transform="translate(0, 0)">
       <rect width="90" height="26" rx="6" fill="#154366" stroke="#0ea5e9" stroke-width="0.8" />
@@ -106,8 +84,6 @@
       <text x="52" y="17" class="mono" font-size="11" font-weight="600" fill="#e0f2fe" text-anchor="middle">Edge Cache</text>
     </g>
   </g>
-
-  <!-- Action Hint -->
   <text x="550" y="302" class="mono" font-size="10" fill="#22d3ee" text-anchor="end">
     VISIT TOKOAI.MY.ID →
   </text>

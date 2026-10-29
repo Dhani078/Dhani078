@@ -4,22 +4,18 @@
       <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#161b22;stop-opacity:1"/>
     </linearGradient>
-    
     <linearGradient id="barBlue" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#1f6feb;stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:1"/>
     </linearGradient>
-    
     <linearGradient id="barOrange" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#da3633;stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#ffa657;stop-opacity:1"/>
     </linearGradient>
-    
     <linearGradient id="barGreen" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#2ea043;stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#56d364;stop-opacity:1"/>
     </linearGradient>
-    
     <filter id="barGlow">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
@@ -28,19 +24,12 @@
       </feMerge>
     </filter>
   </defs>
-  
   <rect width="1100" height="300" fill="url(#bgSkills)"/>
-  
-  <!-- Title -->
   <text x="550" y="40" font-family="'SF Mono', monospace" font-size="32" font-weight="800" text-anchor="middle" fill="#c9d1d9">
     Tech Stack
   </text>
-  
-  <!-- Frontend Column -->
   <g transform="translate(50, 80)">
     <text x="0" y="0" font-family="monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="2">FRONTEND</text>
-    
-    <!-- Next.js -->
     <g transform="translate(0, 25)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barBlue)" filter="url(#barGlow)">
@@ -52,8 +41,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">Next.js 16</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
-    
-    <!-- React -->
     <g transform="translate(0, 55)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barBlue)" filter="url(#barGlow)">
@@ -65,8 +52,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">React 19</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
-    
-    <!-- TypeScript -->
     <g transform="translate(0, 85)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barBlue)" filter="url(#barGlow)">
@@ -78,8 +63,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">TypeScript</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
-    
-    <!-- Three.js -->
     <g transform="translate(0, 115)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barBlue)" filter="url(#barGlow)">
@@ -92,12 +75,8 @@
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#ffa657">Advanced</text>
     </g>
   </g>
-  
-  <!-- Backend Column -->
   <g transform="translate(410, 80)">
     <text x="0" y="0" font-family="monospace" font-size="13" font-weight="700" fill="#ffa657" letter-spacing="2">BACKEND &amp; CLOUD</text>
-    
-    <!-- CF Workers -->
     <g transform="translate(0, 25)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barOrange)" filter="url(#barGlow)">
@@ -109,8 +88,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">CF Workers</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
-    
-    <!-- TiDB -->
     <g transform="translate(0, 55)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barOrange)" filter="url(#barGlow)">
@@ -122,8 +99,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">TiDB Cloud</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
-    
-    <!-- PostgreSQL -->
     <g transform="translate(0, 85)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barOrange)" filter="url(#barGlow)">
@@ -135,8 +110,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">PostgreSQL</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
-    
-    <!-- Node.js -->
     <g transform="translate(0, 115)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barOrange)" filter="url(#barGlow)">
@@ -149,12 +122,8 @@
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#ffa657">Advanced</text>
     </g>
   </g>
-  
-  <!-- Tools Column -->
   <g transform="translate(770, 80)">
     <text x="0" y="0" font-family="monospace" font-size="13" font-weight="700" fill="#3fb950" letter-spacing="2">DEVOPS &amp; TOOLS</text>
-    
-    <!-- Git -->
     <g transform="translate(0, 25)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barGreen)" filter="url(#barGlow)">
@@ -166,8 +135,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">Git &amp; GitHub</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
-    
-    <!-- Docker -->
     <g transform="translate(0, 55)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barGreen)" filter="url(#barGlow)">
@@ -179,8 +146,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">Docker</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#ffa657">Advanced</text>
     </g>
-    
-    <!-- Linux -->
     <g transform="translate(0, 85)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barGreen)" filter="url(#barGlow)">
@@ -192,8 +157,6 @@
       <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">Linux</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#ffa657">Advanced</text>
     </g>
-    
-    <!-- Vercel -->
     <g transform="translate(0, 115)">
       <rect width="280" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
       <rect width="0" height="8" rx="4" fill="url(#barGreen)" filter="url(#barGlow)">
@@ -206,7 +169,5 @@
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
   </g>
-  
-  <!-- Grid overlay -->
   <rect width="1100" height="300" fill="none" stroke="rgba(88,166,255,0.05)" stroke-width="1"/>
 </svg>

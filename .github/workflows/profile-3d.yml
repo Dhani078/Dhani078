@@ -1,0 +1,40 @@
+name: GitHub 3D Contribution Calendar
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # Runs daily at 18:00 UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.2.2
+        with:
+          persist-credentials: true
+
+      - name: Generate 3D Profile Calendar
+        uses: yoshi389111/github-profile-3d-contrib@f4cf497614310d7b45ab3e000a523e47c524b14f
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit and Push 3D Calendar
+        run: |
+          git config user.name "Dhani078"
+          git config user.email "dhanisepeda@gmail.com"
+          git add -- profile-3d-contrib/
+          if git diff --cached --quiet; then
+            echo "No 3D changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(visualizer): update 3d contribution calendar"
+          git push
