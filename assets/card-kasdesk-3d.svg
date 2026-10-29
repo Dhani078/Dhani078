@@ -61,7 +61,7 @@
   
   <text x="45" y="115" font-family="'SF Mono', monospace" font-size="15" fill="#c9d1d9">
     <tspan x="45" dy="0">Offline-first PWA with multi-wallet tracking, OCR</tspan>
-    <tspan x="45" dy="22">receipt scanning (Gemini Vision), biometric auth,</tspan>
+    <tspan x="45" dy="22">receipt scanning (Neural OCR Engine), biometric auth,</tspan>
     <tspan x="45" dy="22">and real-time sync with TiDB Cloud.</tspan>
   </text>
   

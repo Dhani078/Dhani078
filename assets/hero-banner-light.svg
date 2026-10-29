@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="auto">
+  <defs>
+    <style><![CDATA[
+      @keyframes heroShimmerLight {
+        0% { stop-color: #0969da; }
+        33% { stop-color: #8250df; }
+        66% { stop-color: #bf3989; }
+        100% { stop-color: #0969da; }
+      }
+      @keyframes heroScanLight {
+        0% { transform: translateY(0); opacity: 0; }
+        15% { opacity: 0.6; }
+        85% { opacity: 0.6; }
+        100% { transform: translateY(420px); opacity: 0; }
+      }
+      @keyframes heroPulseLight {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.25); opacity: 0.4; }
+      }
+      @keyframes heroBlinkLight {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .mono { font-family: -apple-system, BlinkMacSystemFont, 'SF Mono', 'Fira Code', 'Segoe UI', monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .shimmer-text-light {
+        fill: url(#heroGradientLight);
+      }
+    ]]></style>
+
+    <linearGradient id="heroGradientLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0969da">
+        <animate attributeName="stop-color" values="#0969da;#8250df;#bf3989;#0969da" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#8250df">
+        <animate attributeName="stop-color" values="#8250df;#bf3989;#0969da;#8250df" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#bf3989">
+        <animate attributeName="stop-color" values="#bf3989;#0969da;#8250df;#bf3989" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="bgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6f8fa" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0f3f6" />
+    </linearGradient>
+
+    <linearGradient id="scanGradLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0969da" stop-opacity="0" />
+      <stop offset="30%" stop-color="#0969da" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#8250df" stop-opacity="0.7" />
+      <stop offset="70%" stop-color="#0969da" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0969da" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="ambientOrbLight1" cx="20%" cy="25%" r="45%">
+      <stop offset="0%" stop-color="#0969da" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0969da" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="ambientOrbLight2" cx="85%" cy="75%" r="45%">
+      <stop offset="0%" stop-color="#8250df" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#8250df" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="gridDotLight" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1" fill="#d0d7de" opacity="0.8" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgLight)" />
+  <rect width="1200" height="420" rx="16" fill="url(#gridDotLight)" />
+
+  <!-- Ambient Glow Orbs -->
+  <rect width="1200" height="420" rx="16" fill="url(#ambientOrbLight1)" />
+  <rect width="1200" height="420" rx="16" fill="url(#ambientOrbLight2)" />
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1198" height="418" rx="15" fill="none" stroke="#d0d7de" stroke-width="1.5" />
+
+  <!-- Laser Scanline -->
+  <g style="animation: heroScanLight 6s linear infinite;">
+    <rect x="0" y="0" width="1200" height="2" fill="url(#scanGradLight)" />
+  </g>
+
+  <!-- Top Window Header -->
+  <rect x="0" y="0" width="1200" height="44" rx="16" fill="#eaeef2" opacity="0.9" />
+  <line x1="0" y1="44" x2="1200" y2="44" stroke="#d0d7de" stroke-width="1" />
+
+  <!-- Window Dots -->
+  <circle cx="28" cy="22" r="6" fill="#ff5f56" />
+  <circle cx="48" cy="22" r="6" fill="#ffbd2e" />
+  <circle cx="68" cy="22" r="6" fill="#27c93f" />
+
+  <!-- Header Title -->
+  <text x="96" y="27" class="mono" font-size="12" fill="#57606a">dhani@edge-cluster:~ (production-node-078)</text>
+
+  <!-- Status Indicator Pill -->
+  <g transform="translate(930, 12)">
+    <rect width="240" height="24" rx="12" fill="#dafbe1" stroke="#4ac26b" stroke-width="1" />
+    <circle cx="16" cy="12" r="4.5" fill="#1a7f37" />
+    <circle cx="16" cy="12" r="8" fill="#1a7f37" opacity="0.3" style="animation: heroPulseLight 2s ease-in-out infinite; transform-origin: 16px 12px;" />
+    <text x="30" y="16" class="sans" font-size="11" font-weight="600" fill="#1a7f37">OPEN TO SWE INTERNSHIP</text>
+  </g>
+
+  <!-- Left Content Area -->
+  <g transform="translate(48, 80)">
+    <!-- Terminal Command -->
+    <text x="0" y="20" class="mono" font-size="15" fill="#0969da" font-weight="600">
+      $ <tspan fill="#24292f">whoami --profile=production</tspan>
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="90" class="sans shimmer-text-light" font-size="64" font-weight="900" letter-spacing="-1.5">
+      DAN.DEV
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="128" class="sans" font-size="22" font-weight="700" fill="#1f2328">
+      Muhammad Rizki Ramadhani
+    </text>
+    <text x="0" y="156" class="sans" font-size="15" font-weight="500" fill="#57606a">
+      Full-Stack &amp; Edge Cloud Engineer • High-Concurrency Architect
+    </text>
+
+    <!-- Tag Pills -->
+    <g transform="translate(0, 185)">
+      <!-- Pill 1: Location -->
+      <g>
+        <rect width="168" height="28" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1" />
+        <text x="14" y="18" class="mono" font-size="11" fill="#1a7f37">📍 Banjarmasin, ID</text>
+      </g>
+      <!-- Pill 2: Education -->
+      <g transform="translate(178, 0)">
+        <rect width="180" height="28" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1" />
+        <text x="14" y="18" class="mono" font-size="11" fill="#0969da">🎓 UNISKA CS • Sem 7</text>
+      </g>
+      <!-- Pill 3: Production -->
+      <g transform="translate(368, 0)">
+        <rect width="168" height="28" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1" />
+        <text x="14" y="18" class="mono" font-size="11" fill="#9a6700">⚡ 6+ Live Systems</text>
+      </g>
+    </g>
+
+    <!-- Core Value Statement -->
+    <g transform="translate(0, 240)">
+      <text x="0" y="20" class="sans" font-size="13.5" fill="#57606a">
+        Delivering sub-50ms edge architectures, 3D physics runtimes, and zero-oversell distributed backends.
+      </text>
+      <text x="0" y="42" class="sans" font-size="13.5" fill="#57606a">
+        Battle-tested across municipal e-archives, heavy equipment ERPs, and real-time payment platforms.
+      </text>
+    </g>
+  </g>
+
+  <!-- Right IDE Terminal Box -->
+  <g transform="translate(640, 72)">
+    <!-- Terminal Background -->
+    <rect width="512" height="308" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2" />
+    
+    <!-- Terminal Header -->
+    <rect width="512" height="32" rx="12" fill="#f6f8fa" />
+    <circle cx="18" cy="16" r="4.5" fill="#ff5f56" />
+    <circle cx="34" cy="16" r="4.5" fill="#ffbd2e" />
+    <circle cx="50" cy="16" r="4.5" fill="#27c93f" />
+    <text x="70" y="20" class="mono" font-size="11" fill="#57606a">architecture.config.ts</text>
+
+    <!-- Code Block -->
+    <g transform="translate(20, 56)" class="mono" font-size="12.5" line-height="1.5">
+      <text y="0" fill="#cf222e">export const <tspan fill="#0550ae">engineer</tspan> = {</text>
+      
+      <text y="24" fill="#57606a">  handle: <tspan fill="#0a3069">"Dhani078"</tspan>,</text>
+      <text y="46" fill="#57606a">  runtime: <tspan fill="#0a3069">"Edge / Serverless / Node 22"</tspan>,</text>
+      
+      <text y="70" fill="#57606a">  coreStack: [</text>
+      <text y="92" fill="#57606a">    <tspan fill="#116329">"Next.js 16"</tspan>, <tspan fill="#116329">"React 19"</tspan>, <tspan fill="#116329">"TypeScript"</tspan>,</text>
+      <text y="114" fill="#57606a">    <tspan fill="#116329">"Cloudflare Workers"</tspan>, <tspan fill="#116329">"TiDB Serverless"</tspan>,</text>
+      <text y="136" fill="#57606a">    <tspan fill="#116329">"Three.js / Rapier"</tspan>, <tspan fill="#116329">"FastAPI + Redis v8"</tspan></text>
+      <text y="158" fill="#57606a">  ],</text>
+      
+      <text y="182" fill="#57606a">  keyMetrics: {</text>
+      <text y="204" fill="#57606a">    latency: <tspan fill="#9a6700">"&lt; 50ms edge TTFB"</tspan>,</text>
+      <text y="226" fill="#57606a">    resilience: <tspan fill="#9a6700">"Zero-oversell Lua EVALSHA"</tspan></text>
+      <text y="248" fill="#57606a">  }</text>
+      
+      <text y="272" fill="#cf222e">};<tspan fill="#0969da" style="animation: heroBlinkLight 1s infinite;">_</tspan></text>
+    </g>
+  </g>
+</svg>

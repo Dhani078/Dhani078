@@ -97,7 +97,7 @@
   
   <!-- Backend -->
   <g transform="translate(480, 120)">
-    <text x="0" y="0" font-family="'SF Mono', monospace" font-size="16" font-weight="800" fill="#ff0080" letter-spacing="3">BACKEND & CLOUD</text>
+    <text x="0" y="0" font-family="'SF Mono', monospace" font-size="16" font-weight="800" fill="#ff0080" letter-spacing="3">BACKEND &amp; CLOUD</text>
     
     <g transform="translate(0, 30)">
       <rect width="300" height="12" rx="6" fill="rgba(255,255,255,0.05)"/>
@@ -160,7 +160,7 @@
       <rect y="-4" width="0" height="4" rx="2" fill="#00ff88" opacity="0.4">
         <animate attributeName="width" from="0" to="235" dur="2s" begin="0.4s" fill="freeze"/>
       </rect>
-      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Git & GitHub</text>
+      <text x="0" y="-10" font-family="'SF Mono', monospace" font-size="15" fill="#ffffff" font-weight="700">Git &amp; GitHub</text>
       <text x="250" y="9" font-family="'SF Mono', monospace" font-size="13" fill="#00ff88" font-weight="700">EXPERT</text>
     </g>
     

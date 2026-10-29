@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 320" width="100%" height="auto">
+  <defs>
+    <style><![CDATA[
+      @keyframes cardPulsePort {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 0.4; }
+      }
+      .mono { font-family: -apple-system, BlinkMacSystemFont, 'SF Mono', 'Fira Code', monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    ]]></style>
+    <linearGradient id="portCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071018" />
+      <stop offset="60%" stop-color="#0c1824" />
+      <stop offset="100%" stop-color="#050b12" />
+    </linearGradient>
+    <linearGradient id="portAccentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="580" height="320" rx="16" fill="url(#portCardBg)" stroke="#1e3a5f" stroke-width="1.5" />
+  
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="580" height="6" rx="8" fill="url(#portAccentGrad)" />
+
+  <!-- Card Header Area -->
+  <g transform="translate(28, 30)">
+    <!-- Icon Box -->
+    <rect width="44" height="44" rx="10" fill="#0369a1" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.2" />
+    <text x="22" y="28" font-size="22" text-anchor="middle">🎨</text>
+
+    <!-- Title &amp; Sub -->
+    <text x="56" y="22" class="sans" font-size="18" font-weight="800" fill="#f8fafc">
+      DAN.DEV Portfolio
+    </text>
+    <text x="56" y="38" class="mono" font-size="11" fill="#38bdf8">
+      3D INTERACTIVE PHYSICS-DRIVEN PORTFOLIO
+    </text>
+
+    <!-- Live Status Pill -->
+    <g transform="translate(380, 8)">
+      <rect width="144" height="26" rx="13" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+      <circle cx="14" cy="13" r="4" fill="#38bdf8" style="animation: cardPulsePort 2s infinite;" />
+      <text x="26" y="17" class="mono" font-size="10" font-weight="700" fill="#bae6fd">3D RUNTIME LIVE</text>
+    </g>
+  </g>
+
+  <!-- Description Body -->
+  <g transform="translate(28, 95)">
+    <text x="0" y="14" class="sans" font-size="13.5" fill="#cbd5e1" font-weight="500">
+      Personal Brand &amp; 3D Engineering Experience Showcase.
+    </text>
+    <text x="0" y="34" class="sans" font-size="13" fill="#94a3b8">
+      Real-time Rapier rigid-body physics lanyard card, double-sided UV mapping,
+    </text>
+    <text x="0" y="52" class="sans" font-size="13" fill="#94a3b8">
+      60 FPS WebGL canvas rendering, and Supabase integration.
+    </text>
+  </g>
+
+  <!-- Key Architectural Highlights Grid -->
+  <g transform="translate(28, 175)">
+    <!-- Box 1 -->
+    <rect width="166" height="58" rx="8" fill="#0f1f33" stroke="#1e3a5f" stroke-width="1" />
+    <text x="14" y="22" class="mono" font-size="10" fill="#93c5fd">PHYSICS ENGINE</text>
+    <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#e0f2fe">Rapier + R3F 3D</text>
+
+    <!-- Box 2 -->
+    <g transform="translate(178, 0)">
+      <rect width="166" height="58" rx="8" fill="#0f1f33" stroke="#1e3a5f" stroke-width="1" />
+      <text x="14" y="22" class="mono" font-size="10" fill="#93c5fd">FRAMEWORK</text>
+      <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#38bdf8">Next 16 + React 19</text>
+    </g>
+
+    <!-- Box 3 -->
+    <g transform="translate(356, 0)">
+      <rect width="166" height="58" rx="8" fill="#0f1f33" stroke="#1e3a5f" stroke-width="1" />
+      <text x="14" y="22" class="mono" font-size="10" fill="#93c5fd">STYLING</text>
+      <text x="14" y="42" class="sans" font-size="12" font-weight="700" fill="#c084fc">Tailwind CSS v4</text>
+    </g>
+  </g>
+
+  <!-- Tech Badges Footer -->
+  <g transform="translate(28, 256)">
+    <g transform="translate(0, 0)">
+      <rect width="90" height="26" rx="6" fill="#1e3a5f" stroke="#38bdf8" stroke-width="0.8" />
+      <text x="45" y="17" class="mono" font-size="11" font-weight="600" fill="#e0f2fe" text-anchor="middle">Three.js</text>
+    </g>
+    <g transform="translate(100, 0)">
+      <rect width="90" height="26" rx="6" fill="#1e3a5f" stroke="#38bdf8" stroke-width="0.8" />
+      <text x="45" y="17" class="mono" font-size="11" font-weight="600" fill="#e0f2fe" text-anchor="middle">Next.js 16</text>
+    </g>
+    <g transform="translate(200, 0)">
+      <rect width="90" height="26" rx="6" fill="#1e3a5f" stroke="#38bdf8" stroke-width="0.8" />
+      <text x="45" y="17" class="mono" font-size="11" font-weight="600" fill="#e0f2fe" text-anchor="middle">React 19</text>
+    </g>
+    <g transform="translate(300, 0)">
+      <rect width="104" height="26" rx="6" fill="#1e3a5f" stroke="#38bdf8" stroke-width="0.8" />
+      <text x="52" y="17" class="mono" font-size="11" font-weight="600" fill="#e0f2fe" text-anchor="middle">Rapier 3D</text>
+    </g>
+    <g transform="translate(414, 0)">
+      <rect width="94" height="26" rx="6" fill="#1e3a5f" stroke="#38bdf8" stroke-width="0.8" />
+      <text x="47" y="17" class="mono" font-size="11" font-weight="600" fill="#e0f2fe" text-anchor="middle">Supabase</text>
+    </g>
+  </g>
+
+  <!-- Action Hint -->
+  <text x="550" y="302" class="mono" font-size="10" fill="#38bdf8" text-anchor="end">
+    EXPLORE 3D CANVAS →
+  </text>
+</svg>

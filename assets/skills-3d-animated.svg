@@ -95,7 +95,7 @@
   
   <!-- Backend Column -->
   <g transform="translate(410, 80)">
-    <text x="0" y="0" font-family="monospace" font-size="13" font-weight="700" fill="#ffa657" letter-spacing="2">BACKEND & CLOUD</text>
+    <text x="0" y="0" font-family="monospace" font-size="13" font-weight="700" fill="#ffa657" letter-spacing="2">BACKEND &amp; CLOUD</text>
     
     <!-- CF Workers -->
     <g transform="translate(0, 25)">
@@ -152,7 +152,7 @@
   
   <!-- Tools Column -->
   <g transform="translate(770, 80)">
-    <text x="0" y="0" font-family="monospace" font-size="13" font-weight="700" fill="#3fb950" letter-spacing="2">DEVOPS & TOOLS</text>
+    <text x="0" y="0" font-family="monospace" font-size="13" font-weight="700" fill="#3fb950" letter-spacing="2">DEVOPS &amp; TOOLS</text>
     
     <!-- Git -->
     <g transform="translate(0, 25)">
@@ -163,7 +163,7 @@
       <rect y="-2" width="0" height="4" rx="2" fill="#3fb950" opacity="0.3">
         <animate attributeName="width" from="0" to="275" dur="1.5s" begin="0.4s" fill="freeze"/>
       </rect>
-      <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">Git & GitHub</text>
+      <text x="0" y="-8" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">Git &amp; GitHub</text>
       <text x="285" y="6" font-family="monospace" font-size="11" fill="#3fb950">Expert</text>
     </g>
     
